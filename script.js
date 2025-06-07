@@ -28,14 +28,18 @@ const observer = new IntersectionObserver((entries) => {
 lessons.forEach(lesson => observer.observe(lesson));
 
 // Quiz functionality
-function checkQuiz() {
-    const answers = {
-        q1: 'b', // Belief, Truth, and Justification
-        q2: 'b'  // Sometimes JTB isn't enough because of lucky coincidences
-    };
+        function checkQuiz() {
+            const answers = {
+                q1: 'b', // Belief, Truth, and Justification
+                q2: 'b',  // Sometimes JTB isn't enough because of lucky coincidences
+                q3: 'b', // 基礎主義：知識建立在某些不證自明的基本信念之上。
+                q4: 'b', // 可靠主義：形成信念的認知過程是否可靠。
+                q5: 'd', // 薛丁格的貓
+                q6: 'c'  // 檢查資訊來源並進行交叉參考。
+            };
 
-    let score = 0;
-    let total = Object.keys(answers).length;
+            let score = 0;
+            let total = Object.keys(answers).length;
 
     // Check multiple choice questions
     for (let question in answers) {
