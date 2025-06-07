@@ -121,6 +121,102 @@
             </div>
         </section>
 
+        <!-- Lesson 1 Quiz -->
+        <section class="bg-blue-50 rounded-lg p-8 mb-8">
+            <h3 class="text-xl font-bold mb-6 text-blue-800"><i class="fas fa-question-circle mr-3"></i>第一課測驗</h3>
+            <div class="space-y-6">
+                <!-- Question 1.1 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 1.1：多選題</h4>
+                    <p class="mb-4">認識論主要研究什麼？</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_1" value="a" class="mr-3">
+                            <span>A) 倫理學</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_1" value="b" class="mr-3">
+                            <span>B) 知識</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_1" value="c" class="mr-3">
+                            <span>C) 藝術</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_1" value="d" class="mr-3">
+                            <span>D) 邏輯</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 1.2 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 1.2：多選題</h4>
+                    <p class="mb-4">根據課程內容，相信某事和知道某事之間的主要區別是什麼？</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_2" value="a" class="mr-3">
+                            <span>A) 相信比知道需要更多信心</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_2" value="b" class="mr-3">
+                            <span>B) 知識需要充分理由，而相信不一定</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_2" value="c" class="mr-3">
+                            <span>C) 相信總是真的，而知識可以是假的</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_2" value="d" class="mr-3">
+                            <span>D) 沒有區別；它們是相同的。</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 1.3 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 1.3：多選題</h4>
+                    <p class="mb-4">哪些古代哲學家被提及為認識論奠定了基礎？</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_3" value="a" class="mr-3">
+                            <span>A) 蘇格拉底和亞里斯多德</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_3" value="b" class="mr-3">
+                            <span>B) 柏拉圖和亞里斯多德</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_3" value="c" class="mr-3">
+                            <span>C) 笛卡爾和柏拉圖</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_3" value="d" class="mr-3">
+                            <span>D) 康德和休謨</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 1.4 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 1.4：問答題</h4>
+                    <p class="mb-4">用你自己的話解釋為什麼知識在日常生活中被認為是一種「實用資產」。</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="請在此輸入你的答案..."></textarea>
+                </div>
+
+                <!-- Question 1.5 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 1.5：問答題</h4>
+                    <p class="mb-4">你能舉一個你曾經相信是真的，但後來發現是假的事情的例子嗎？是什麼讓你改變了主意？這說明了為什麼哲學家如此關心知識和信念之間的區別！</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="請在此輸入你的答案..."></textarea>
+                </div>
+
+                <button onclick="checkLessonQuiz(1)" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    <i class="fas fa-check mr-2"></i>檢查第一課答案
+                </button>
+            </div>
+        </section>
+
         <!-- Lesson 2: Truth, Belief, and Justification -->
         <section class="lesson-card bg-white rounded-lg shadow-lg p-8 mb-8">
             <div class="flex items-center mb-6">
@@ -172,7 +268,7 @@
                     <ul>
                         <li><strong>信念：</strong> 我相信圖書館下午 5 點關門。</li>
                         <li><strong>真理：</strong> 圖書館確實下午 5 點關門。</li>
-                        <li><strong>證成：</strong> 我昨天查了圖書館的網站。</li>
+                        <li><strong>證成：：</strong> 我昨天查了圖書館的網站。</li>
                     </ul>
                     
                     <p>但是，如果其中一個條件缺失了呢？如果我相信它是真的，而且它確實是真的，但我只是隨機猜測的，那我真的「知道」它嗎？大多數人會說不——幸運的猜測不能算作知識。</p>
@@ -189,6 +285,102 @@
                     <p>2. 湯姆覺得會下雨，因為他有種「感覺」，結果真的下雨了。</p>
                     <p>3. 麗莎相信她最喜歡的球隊會贏，因為她總是這樣相信，但他們輸了。</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- Lesson 2 Quiz -->
+        <section class="bg-blue-50 rounded-lg p-8 mb-8">
+            <h3 class="text-xl font-bold mb-6 text-blue-800"><i class="fas fa-question-circle mr-3"></i>第二課測驗</h3>
+            <div class="space-y-6">
+                <!-- Question 2.1 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 2.1：多選題</h4>
+                    <p class="mb-4">根據 JTB 理論，以下哪項不是知識的必要條件？</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_1" value="a" class="mr-3">
+                            <span>A) 信念</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_1" value="b" class="mr-3">
+                            <span>B) 真理</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_1" value="c" class="mr-3">
+                            <span>C) 證成</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_1" value="d" class="mr-3">
+                            <span>D) 確定性</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 2.2 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 2.2：多選題</h4>
+                    <p class="mb-4">知識的傳統 JTB 分析可以追溯到哪位哲學家？</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_2" value="a" class="mr-3">
+                            <span>A) 亞里斯多德</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_2" value="b" class="mr-3">
+                            <span>B) 勒內·笛卡爾</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_2" value="c" class="mr-3">
+                            <span>C) 柏拉圖</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_2" value="d" class="mr-3">
+                            <span>D) 蓋提爾</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 2.3 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 2.3：多選題</h4>
+                    <p class="mb-4">JTB 理論中「證成」條件的目的是什麼？</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_3" value="a" class="mr-3">
+                            <span>A) 確保信念受歡迎</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_3" value="b" class="mr-3">
+                            <span>B) 防止由隨機猜測形成的真信念被歸類為知識</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_3" value="c" class="mr-3">
+                            <span>C) 使信念更複雜</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_3" value="d" class="mr-3">
+                            <span>D) 使信念更容易記住。</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 2.4 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 2.4：問答題</h4>
+                    <p class="mb-4">解釋為什麼根據 JTB 理論，一個碰巧為真的「幸運猜測」通常不被視為知識。</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="請在此輸入你的答案..."></textarea>
+                </div>
+
+                <!-- Question 2.5 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 2.5：問答題</h4>
+                    <p class="mb-4">舉一個你認為是真實但 *沒有* 充分證成的信念的例子。解釋原因。</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="請在此輸入你的答案..."></textarea>
+                </div>
+
+                <button onclick="checkLessonQuiz(2)" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    <i class="fas fa-check mr-2"></i>檢查第二課答案
+                </button>
             </div>
         </section>
 
@@ -254,6 +446,102 @@
             <div class="mt-8 bg-red-50 p-6 rounded-lg">
                 <h4 class="text-lg font-semibold mb-4 text-red-800"><i class="fas fa-exclamation-triangle mr-2"></i>思考活動</h4>
                 <p class="text-red-700">你是否曾經因為錯誤的原因而猜對過某事？例如，在沒有學習的考試中猜對了正確答案？這算不算「知道」答案呢？</p>
+            </div>
+        </section>
+
+        <!-- Lesson 3 Quiz -->
+        <section class="bg-blue-50 rounded-lg p-8 mb-8">
+            <h3 class="text-xl font-bold mb-6 text-blue-800"><i class="fas fa-question-circle mr-3"></i>第三課測驗</h3>
+            <div class="space-y-6">
+                <!-- Question 3.1 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 3.1：多選題</h4>
+                    <p class="mb-4">蓋提爾案例向我們展示了什麼？</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_1" value="a" class="mr-3">
+                            <span>A) JTB 理論總是正確的</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_1" value="b" class="mr-3">
+                            <span>B) 有時 JTB 不夠，因為幸運的巧合</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_1" value="c" class="mr-3">
+                            <span>C) 引入了新的知識類型</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_1" value="d" class="mr-3">
+                            <span>D) 簡化了知識的定義。</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 3.2 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 3.2：多選題</h4>
+                    <p class="mb-4">以下哪項是對蓋提爾問題的回應，它側重於信念形成過程的可靠性？</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_2" value="a" class="mr-3">
+                            <span>A) 基礎主義</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_2" value="b" class="mr-3">
+                            <span>B) 連貫主義</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_2" value="c" class="mr-3">
+                            <span>C) 可靠主義</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_2" value="d" class="mr-3">
+                            <span>D) 德性認識論</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 3.3 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 3.3：多選題</h4>
+                    <p class="mb-4">「無錯誤前提」標準建議一個信念要被視為知識，它必須滿足什麼條件？</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_3" value="a" class="mr-3">
+                            <span>A) 它必須基於一個流行的觀點</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_3" value="b" class="mr-3">
+                            <span>B) 它不能基於任何錯誤的前提</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_3" value="c" class="mr-3">
+                            <span>C) 它必須是一個簡單的信念</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_3" value="d" class="mr-3">
+                            <span>D) 它必須是一個每個人都同意的信念。</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 3.4 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 3.4：問答題</h4>
+                    <p class="mb-4">用你自己的話解釋「求職面試」蓋提爾案例，以及它為什麼挑戰了 JTB 理論。</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="請在此輸入你的答案..."></textarea>
+                </div>
+
+                <!-- Question 3.5 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 3.5：問答題</h4>
+                    <p class="mb-4">「德性認識論」如何提出與傳統 JTB 理論不同的知識定義？</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="請在此輸入你的答案..."></textarea>
+                </div>
+
+                <button onclick="checkLessonQuiz(3)" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    <i class="fas fa-check mr-2"></i>檢查第三課答案
+                </button>
             </div>
         </section>
 
@@ -363,6 +651,102 @@
             </div>
         </section>
 
+        <!-- Lesson 4 Quiz -->
+        <section class="bg-blue-50 rounded-lg p-8 mb-8">
+            <h3 class="text-xl font-bold mb-6 text-blue-800"><i class="fas fa-question-circle mr-3"></i>第四課測驗</h3>
+            <div class="space-y-6">
+                <!-- Question 4.1 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 4.1：多選題</h4>
+                    <p class="mb-4">哪種證成理論認為知識結構類似於一座建築，其中安全、不證自明的信念充當基礎？</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_1" value="a" class="mr-3">
+                            <span>A) 連貫主義</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_1" value="b" class="mr-3">
+                            <span>B) 無限主義</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_1" value="c" class="mr-3">
+                            <span>C) 基礎主義</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_1" value="d" class="mr-3">
+                            <span>D) 可靠主義</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 4.2 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 4.2：多選題</h4>
+                    <p class="mb-4">「連貫主義」面臨的主要批評是什麼？</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_2" value="a" class="mr-3">
+                            <span>A) 它需要太多基本信念</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_2" value="b" class="mr-3">
+                            <span>B) 它可能與現實脫節（孤立問題）</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_2" value="c" class="mr-3">
+                            <span>C) 它過於依賴直接經驗</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_2" value="d" class="mr-3">
+                            <span>D) 它過於簡單而無用。</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 4.3 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 4.3：多選題</h4>
+                    <p class="mb-4">以下哪項是「見證」作為證成來源的例子？</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_3" value="a" class="mr-3">
+                            <span>A) 看到一個紅蘋果</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_3" value="b" class="mr-3">
+                            <span>B) 解決一個數學問題</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_3" value="c" class="mr-3">
+                            <span>C) 閱讀一本歷史教科書</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_3" value="d" class="mr-3">
+                            <span>D) 有一種直覺。</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 4.4 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 4.4：問答題</h4>
+                    <p class="mb-4">簡要解釋「內在主義」和「外在主義」在證成方面的區別。</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="請在此輸入你的答案..."></textarea>
+                </div>
+
+                <!-- Question 4.5 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 4.5：問答題</h4>
+                    <p class="mb-4">描述一個你通過「直接經驗」獲得知識的情境，並解釋該經驗如何證成了你的信念。</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="請在此輸入你的答案..."></textarea>
+                </div>
+
+                <button onclick="checkLessonQuiz(4)" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    <i class="fas fa-check mr-2"></i>檢查第四課答案
+                </button>
+            </div>
+        </section>
+
         <!-- Lesson 5: Skepticism and Trust -->
         <section class="lesson-card bg-white rounded-lg shadow-lg p-8 mb-8">
             <div class="flex items-center mb-6">
@@ -397,15 +781,15 @@
                 <div class="prose prose-lg text-gray-700">
                     <p><strong>懷疑論（Skepticism）</strong>是一種我們應該懷疑或質疑我們信念的想法，特別是關於知識的主張。有些哲學家甚至走得更遠，他們懷疑我們是否真的能知道任何事物！</p>
                     
-                    <p>哲學懷疑論對人類知識的確定性和範圍提出了重大質疑。它挑戰我們是否能知道任何事物，引發了關於我們知識主張穩健性的深入討論。哲學懷疑論可以追溯到古希臘哲學家，如皮爾霍（Pyrrho）和塞克斯圖斯·經驗主義者（Sextus Empiricus）。然而，勒內·笛卡爾（René Descartes）常被認為是將懷疑論帶入現代的功臣，他採用了一種質疑所有信念確定性的方法。笛卡爾著名地設想了一個邪惡惡魔的可能性，它欺騙我們關於一切，從而動搖了我們感官經驗和理性的確定性。這種情境類似於當代的「缸中之腦」思想實驗，其中人們設想我們的整個認知經驗可能被人為地由外部欺騙性影響所誘導。</p>
+                    <p>哲學懷疑論對人類知識的確定性和範圍提出了重大質疑。它挑戰我們是否能知道任何事物，引發了關於我們知識主張穩健性的深入討論。哲學懷疑論可以追溯到古希臘哲學家，如皮爾霍（Pyrrho）和塞克斯圖斯·經驗主義者（Sextus Empiricus）。然而，勒內·笛卡爾（René Descartes）常被認為是將懷疑論帶入現代的功臣，他採用了一種質疑所有信念確定性的方法。笛卡爾著名地設想了一個邪惡惡魔的可能性，它欺騙我們關於一切，從而動搖了我們感官經驗和理性的確定性。這種情境類似於當代的「缸中之腦」思想實驗，其中人們設想我們的整個認知經驗可能被人為地由外部欺騙影響所誘導。</p>
 
                     <div class="bg-red-50 p-6 rounded-lg my-6">
                         <h5 class="font-semibold text-red-800 mb-3">著名的懷疑論問題：</h5>
                         <ul class="list-disc list-inside space-y-2 text-red-700">
-                            <li><strong>夢境問題：</strong> 你怎麼知道你現在不是在做夢？</li>
-                            <li><strong>矩陣問題：</strong> 你怎麼知道你的現實是真實的？</li>
-                            <li><strong>邪惡欺騙者：</strong> 如果有什麼東西在欺騙你關於一切呢？</li>
-                            <li><strong>缸中之腦：</strong> 如果你只是一個被輸入虛假經驗的大腦呢？</li>
+                            <li><strong>夢境問題：：</strong> 你怎麼知道你現在不是在做夢？</li>
+                            <li><strong>矩陣問題：：</strong> 你怎麼知道你的現實是真實的？</li>
+                            <li><strong>邪惡欺騙者：：</strong> 如果有什麼東西在欺騙你關於一切呢？</li>
+                            <li><strong>缸中之腦：：</strong> 如果你只是一個被輸入虛假經驗的大腦呢？</li>
                         </ul>
                     </div>
                     
@@ -426,8 +810,8 @@
                     <p>一個平衡的方法可能是：</p>
                     <ul>
                         <li><strong>健康的懷疑：</strong> 質疑可疑的主張並檢查來源。</li>
-                        <li><strong>實際的信任：</strong> 接受在實踐中有效的、有充分支持的信念。</li>
-                        <li><strong>開放的心態：</strong> 當有充分證據時，願意修正信念。</li>
+                        <li><strong>實際的信任：：</strong> 接受在實踐中有效的、有充分支持的信念。</li>
+                        <li><strong>開放的心態：：</strong> 當有充分證據時，願意修正信念。</li>
                     </ul>
                 </div>
             </div>
@@ -441,6 +825,102 @@
                     <p>3. 一則廣告聲稱某產品會讓你受歡迎。</p>
                     <p>4. 你的醫生告訴你在生病時服用藥物。</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- Lesson 5 Quiz -->
+        <section class="bg-blue-50 rounded-lg p-8 mb-8">
+            <h3 class="text-xl font-bold mb-6 text-blue-800"><i class="fas fa-question-circle mr-3"></i>第五課測驗</h3>
+            <div class="space-y-6">
+                <!-- Question 5.1 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 5.1：多選題</h4>
+                    <p class="mb-4">哲學懷疑論主要關注什麼？</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_1" value="a" class="mr-3">
+                            <span>A) 宇宙的起源</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_1" value="b" class="mr-3">
+                            <span>B) 人類知識的確定性和範圍</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_1" value="c" class="mr-3">
+                            <span>C) 道德價值的本質</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_1" value="d" class="mr-3">
+                            <span>D) 政治體系的結構</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 5.2 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 5.2：多選題</h4>
+                    <p class="mb-4">哪位哲學家常被認為是通過其方法性懷疑將懷疑論帶入現代的功臣？</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_2" value="a" class="mr-3">
+                            <span>A) 柏拉圖</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_2" value="b" class="mr-3">
+                            <span>B) 勒內·笛卡爾</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_2" value="c" class="mr-3">
+                            <span>C) 大衛·休謨</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_2" value="d" class="mr-3">
+                            <span>D) 伊曼努爾·康德</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 5.3 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 5.3：多選題</h4>
+                    <p class="mb-4">「情境主義」對知識標準有何建議？</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_3" value="a" class="mr-3">
+                            <span>A) 它們總是絕對且不變的。</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_3" value="b" class="mr-3">
+                            <span>B) 它們因情境而異。</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_3" value="c" class="mr-3">
+                            <span>C) 它們由大眾意見決定。</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_3" value="d" class="mr-3">
+                            <span>D) 它們與知識主張無關。</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 5.4 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 5.4：問答題</h4>
+                    <p class="mb-4">解釋「不謬論」的概念，以及為什麼它對日常知識主張來說是一個很高的門檻。</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="請在此輸入你的答案..."></textarea>
+                </div>
+
+                <!-- Question 5.5 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 5.5：問答題</h4>
+                    <p class="mb-4">描述課程中提到的「平衡懷疑」的方法。為什麼它很重要？</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="請在此輸入你的答案..."></textarea>
+                </div>
+
+                <button onclick="checkLessonQuiz(5)" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    <i class="fas fa-check mr-2"></i>檢查第五課答案
+                </button>
             </div>
         </section>
 
@@ -531,13 +1011,13 @@
                     <div class="bg-green-50 p-6 rounded-lg my-6">
                         <h5 class="font-semibold text-green-800 mb-3">數位智慧策略：</h5>
                         <ul class="list-disc list-inside space-y-2 text-green-700">
-                            <li><strong>檢查來源：</strong> 這是誰寫的？他們的資歷是什麼？</li>
-                            <li><strong>交叉參考：</strong> 其他可靠來源是否也說同樣的事情？</li>
-                            <li><strong>尋找偏見：</strong> 這是否試圖說服你某事？</li>
-                            <li><strong>檢查日期：</strong> 這份資訊是最新的嗎？</li>
+                            <li><strong>檢查來源：：</strong> 這是誰寫的？他們的資歷是什麼？</li>
+                            <li><strong>交叉參考：：</strong> 其他可靠來源是否也說同樣的事情？</li>
+                            <li><strong>尋找偏見：：</strong> 這是否試圖說服你某事？</li>
+                            <li><strong>檢查日期：：</strong> 這份資訊是最新的嗎？</li>
                             <li><strong>注意情緒：：</strong> 這是否讓你感到憤怒或害怕？那可能是故意的。</li>
-                            <li><strong>多樣化來源：</strong> 不要只從一個地方獲取所有新聞。</li>
-                            <li><strong>培養認識德性：</strong> 培養開放心態、智力謙遜和批判性思維等特質。</li>
+                            <li><strong>多樣化來源：：</strong> 不要只從一個地方獲取所有新聞。</li>
+                            <li><strong>培養認識德性：：</strong> 培養開放心態、智力謙遜和批判性思維等特質。</li>
                             <li><strong>認識責任和認識警惕：：</strong> 尋求真相、避免虛假，批判性評估資訊來源的可信度和可靠性。</li>
                         </ul>
                     </div>
@@ -558,185 +1038,98 @@
             </div>
         </section>
 
-        <!-- Course Quiz -->
-        <section class="bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg p-8 mb-8">
-            <h3 class="text-2xl font-bold mb-6"><i class="fas fa-quiz mr-3"></i>課程評量</h3>
-            
+        <!-- Lesson 6 Quiz -->
+        <section class="bg-blue-50 rounded-lg p-8 mb-8">
+            <h3 class="text-xl font-bold mb-6 text-blue-800"><i class="fas fa-question-circle mr-3"></i>第六課測驗</h3>
             <div class="space-y-6">
-                <!-- Quiz Question 1 -->
-                <div class="bg-white bg-opacity-10 rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-4">問題 1：多選題</h4>
-                    <p class="mb-4">根據傳統的 JTB 理論，知識需要哪三樣東西？</p>
+                <!-- Question 6.1 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 6.1：多選題</h4>
+                    <p class="mb-4">以下哪項是數位時代知識面臨的挑戰？</p>
                     <div class="space-y-2">
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q1" value="a" class="mr-3">
-                            <span>A) 信念、真理和運氣</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_1" value="a" class="mr-3">
+                            <span>A) 增加對多樣化資訊的接觸</span>
                         </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q1" value="b" class="mr-3">
-                            <span>B) 信念、真理和證成</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_1" value="b" class="mr-3">
+                            <span>B) 錯誤資訊和「假新聞」的傳播</span>
                         </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q1" value="c" class="mr-3">
-                            <span>C) 希望、真理和證據</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_1" value="c" class="mr-3">
+                            <span>C) 與專家溝通更便捷</span>
                         </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q1" value="d" class="mr-3">
-                            <span>D) 信念、事實和確定性</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_1" value="d" class="mr-3">
+                            <span>D) 科學發現更快。</span>
                         </label>
                     </div>
                 </div>
 
-                <!-- Quiz Question 2 -->
-                <div class="bg-white bg-opacity-10 rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-4">問題 2：多選題</h4>
-                    <p class="mb-4">蓋提爾案例向我們展示了什麼？</p>
+                <!-- Question 6.2 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 6.2：多選題</h4>
+                    <p class="mb-4">在數位資訊的背景下，「迴音室」是什麼？</p>
                     <div class="space-y-2">
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q2" value="a" class="mr-3">
-                            <span>A) JTB 總是知識的充分條件</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_2" value="a" class="mr-3">
+                            <span>A) 專為完美音響效果設計的房間</span>
                         </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q2" value="b" class="mr-3">
-                            <span>B) 有時 JTB 不夠，因為幸運的巧合</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_2" value="b" class="mr-3">
+                            <span>B) 個人只接觸到確認其現有信念的資訊的情境</span>
                         </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q2" value="c" class="mr-3">
-                            <span>C) 真理對知識不重要</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_2" value="c" class="mr-3">
+                            <span>C) 一種錄音技術</span>
                         </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q2" value="d" class="mr-3">
-                            <span>D) 證成是不可能實現的</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_2" value="d" class="mr-3">
+                            <span>D) 一種改善記憶的方法。</span>
                         </label>
                     </div>
                 </div>
 
-                <!-- Quiz Question 3 -->
-                <div class="bg-white bg-opacity-10 rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-4">問題 3：多選題</h4>
-                    <p class="mb-4">以下哪項是「基礎主義」的核心思想？</p>
+                <!-- Question 6.3 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 6.3：多選題</h4>
+                    <p class="mb-4">哪種認識德性對於駕馭資訊豐富的環境和對抗錯誤資訊至關重要？</p>
                     <div class="space-y-2">
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q3" value="a" class="mr-3">
-                            <span>A) 所有信念都相互支持，形成一個網絡。</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_3" value="a" class="mr-3">
+                            <span>A) 懶惰</span>
                         </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q3" value="b" class="mr-3">
-                            <span>B) 知識建立在某些不證自明的基本信念之上。</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_3" value="b" class="mr-3">
+                            <span>B) 思想封閉</span>
                         </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q3" value="c" class="mr-3">
-                            <span>C) 證成涉及無限的理由鏈。</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_3" value="c" class="mr-3">
+                            <span>C) 批判性思維</span>
                         </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q3" value="d" class="mr-3">
-                            <span>D) 知識主要來自於他人的見證。</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_3" value="d" class="mr-3">
+                            <span>D) 教條主義。</span>
                         </label>
                     </div>
                 </div>
 
-                <!-- Quiz Question 4 -->
-                <div class="bg-white bg-opacity-10 rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-4">問題 4：多選題</h4>
-                    <p class="mb-4">「可靠主義」主要關注什麼？</p>
-                    <div class="space-y-2">
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q4" value="a" class="mr-3">
-                            <span>A) 信念的內在邏輯一致性。</span>
-                        </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q4" value="b" class="mr-3">
-                            <span>B) 形成信念的認知過程是否可靠。</span>
-                        </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q4" value="c" class="mr-3">
-                            <span>C) 信念是否能被意識到。</span>
-                        </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q4" value="d" class="mr-3">
-                            <span>D) 知識的倫理維度。</span>
-                        </label>
-                    </div>
+                <!-- Question 6.4 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 6.4：問答題</h4>
+                    <p class="mb-4">解釋「認識勞動分工」如何在現代社會中既促進又挑戰知識的獲取。</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="請在此輸入你的答案..."></textarea>
                 </div>
 
-                <!-- Quiz Question 5 -->
-                <div class="bg-white bg-opacity-10 rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-4">問題 5：多選題</h4>
-                    <p class="mb-4">以下哪項不是著名的懷疑論問題？</p>
-                    <div class="space-y-2">
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q5" value="a" class="mr-3">
-                            <span>A) 夢境問題</span>
-                        </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q5" value="b" class="mr-3">
-                            <span>B) 缸中之腦</span>
-                        </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q5" value="c" class="mr-3">
-                            <span>C) 邪惡欺騙者</span>
-                        </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q5" value="d" class="mr-3">
-                            <span>D) 薛丁格的貓</span>
-                        </label>
-                    </div>
+                <!-- Question 6.5 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">問題 6.5：問答題</h4>
+                    <p class="mb-4">描述兩種你可以用來評估線上資訊可靠性的「數位智慧策略」。</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="請在此輸入你的答案..."></textarea>
                 </div>
 
-                <!-- Quiz Question 6 -->
-                <div class="bg-white bg-opacity-10 rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-4">問題 6：多選題</h4>
-                    <p class="mb-4">在數位時代，以下哪項是應對假新聞的「數位智慧策略」之一？</p>
-                    <div class="space-y-2">
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q6" value="a" class="mr-3">
-                            <span>A) 只閱讀你同意的資訊。</span>
-                        </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q6" value="b" class="mr-3">
-                            <span>B) 相信所有在社交媒體上分享的內容。</span>
-                        </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q6" value="c" class="mr-3">
-                            <span>C) 檢查資訊來源並進行交叉參考。</span>
-                        </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q6" value="d" class="mr-3">
-                            <span>D) 避免接觸任何讓你感到不舒服的資訊。</span>
-                        </label>
-                    </div>
-                </div>
-
-                <!-- Quiz Question 7 -->
-                <div class="bg-white bg-opacity-10 rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-4">問題 7：簡答題</h4>
-                    <p class="mb-4">請解釋「認識論」是什麼，以及它主要研究哪些問題。</p>
-                    <textarea class="w-full p-3 rounded bg-white bg-opacity-20 text-white placeholder-gray-300 border border-white border-opacity-30" rows="4" placeholder="請在此輸入你的答案..."></textarea>
-                </div>
-
-                <!-- Quiz Question 8 -->
-                <div class="bg-white bg-opacity-10 rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-4">問題 8：簡答題</h4>
-                    <p class="mb-4">請舉一個你認為符合 JTB（證成真信念）條件的例子，並解釋為什麼它符合這三個條件。</p>
-                    <textarea class="w-full p-3 rounded bg-white bg-opacity-20 text-white placeholder-gray-300 border border-white border-opacity-30" rows="4" placeholder="請在此輸入你的答案..."></textarea>
-                </div>
-
-                <!-- Quiz Question 9 -->
-                <div class="bg-white bg-opacity-10 rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-4">問題 9：簡答題</h4>
-                    <p class="mb-4">簡要說明「基礎主義」和「連貫主義」在證成信念方面的區別。</p>
-                    <textarea class="w-full p-3 rounded bg-white bg-opacity-20 text-white placeholder-gray-300 border border-white border-opacity-30" rows="4" placeholder="請在此輸入你的答案..."></textarea>
-                </div>
-
-                <!-- Quiz Question 10 -->
-                <div class="bg-white bg-opacity-10 rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-4">問題 10：簡答題</h4>
-                    <p class="mb-4">在數位時代，為什麼「迴音室」會對我們獲取真實知識構成挑戰？</p>
-                    <textarea class="w-full p-3 rounded bg-white bg-opacity-20 text-white placeholder-gray-300 border border-white border-opacity-30" rows="4" placeholder="請在此輸入你的答案..."></textarea>
-                </div>
-
-                <button onclick="checkQuiz()" class="bg-yellow-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors">
-                    <i class="fas fa-check mr-2"></i>檢查答案
+                <button onclick="checkLessonQuiz(6)" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    <i class="fas fa-check mr-2"></i>檢查第六課答案
                 </button>
             </div>
         </section>
@@ -758,31 +1151,31 @@
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
                             <div>
-                                <strong>JTB 理論：</strong> 知識作為證成真信念，及其局限性
+                                <strong>JTB 理論：：</strong> 知識作為證成真信念，及其局限性
                             </div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
                             <div>
-                                <strong>蓋提爾問題：</strong> 為什麼幸運的真信念不算是知識
+                                <strong>蓋提爾問題：：</strong> 為什麼幸運的真信念不算是知識
                             </div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
                             <div>
-                                <strong>證成來源：</strong> 經驗、推理、見證和直覺
+                                <strong>證成來源：：</strong> 經驗、推理、見證和直覺
                             </div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
                             <div>
-                                <strong>健康的懷疑：</strong> 平衡懷疑與實際信任
+                                <strong>健康的懷疑：：</strong> 平衡懷疑與實際信任
                             </div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
                             <div>
-                                <strong>數位素養：</strong> 在網路時代駕馭知識
+                                <strong>數位素養：：</strong> 在網路時代駕馭知識
                             </div>
                         </li>
                     </ul>
