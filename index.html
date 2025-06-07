@@ -10,6 +10,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 text-white p-4 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold">Epistemology Course</a>
+            <div class="flex space-x-4">
+                <a href="#lesson1" class="hover:text-blue-300">Lesson 1</a>
+                <a href="#lesson2" class="hover:text-blue-300">Lesson 2</a>
+                <a href="#lesson3" class="hover:text-blue-300">Lesson 3</a>
+                <a href="#lesson4" class="hover:text-blue-300">Lesson 4</a>
+                <a href="#lesson5" class="hover:text-blue-300">Lesson 5</a>
+                <a href="#lesson6" class="hover:text-blue-300">Lesson 6</a>
+            </div>
+        </div>
+    </nav>
+
     <!-- Header -->
     <header class="bg-white shadow-sm border-b">
         <div class="max-w-6xl mx-auto px-4 py-4">
@@ -61,7 +76,7 @@
     <main class="max-w-6xl mx-auto px-4 py-8">
         
         <!-- Lesson 1: What is Knowledge? -->
-        <section class="lesson-card bg-white rounded-lg shadow-lg p-8 mb-8">
+        <section class="lesson-card bg-white rounded-lg shadow-lg p-8 mb-8" id="lesson1">
             <div class="flex items-center mb-6">
                 <div class="bg-blue-100 text-blue-600 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4">1</div>
                 <div>
@@ -218,7 +233,7 @@
         </section>
 
         <!-- Lesson 2: Truth, Belief, and Justification -->
-        <section class="lesson-card bg-white rounded-lg shadow-lg p-8 mb-8">
+        <section class="lesson-card bg-white rounded-lg shadow-lg p-8 mb-8" id="lesson2">
             <div class="flex items-center mb-6">
                 <div class="bg-green-100 text-green-600 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4">2</div>
                 <div>
@@ -386,7 +401,7 @@
         </section>
 
         <!-- Lesson 3: The Gettier Problem -->
-        <section class="lesson-card bg-white rounded-lg shadow-lg p-8 mb-8">
+        <section class="lesson-card bg-white rounded-lg shadow-lg p-8 mb-8" id="lesson3">
             <div class="flex items-center mb-6">
                 <div class="bg-purple-100 text-purple-600 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4">3</div>
                 <div>
@@ -547,7 +562,7 @@
         </section>
 
         <!-- Lesson 4: How Do We Justify Our Beliefs? -->
-        <section class="lesson-card bg-white rounded-lg shadow-lg p-8 mb-8">
+        <section class="lesson-card bg-white rounded-lg shadow-lg p-8 mb-8" id="lesson4">
             <div class="flex items-center mb-6">
                 <div class="bg-orange-100 text-orange-600 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4">4</div>
                 <div>
@@ -749,7 +764,7 @@
         </section>
 
         <!-- Lesson 5: Skepticism and Trust -->
-        <section class="lesson-card bg-white rounded-lg shadow-lg p-8 mb-8">
+        <section class="lesson-card bg-white rounded-lg shadow-lg p-8 mb-8" id="lesson5">
             <div class="flex items-center mb-6">
                 <div class="bg-red-100 text-red-600 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4">5</div>
                 <div>
@@ -926,7 +941,7 @@
         </section>
 
         <!-- Lesson 6: Knowledge in the Digital Age -->
-        <section class="lesson-card bg-white rounded-lg shadow-lg p-8 mb-8">
+        <section class="lesson-card bg-white rounded-lg shadow-lg p-8 mb-8" id="lesson6">
             <div class="flex items-center mb-6">
                 <div class="bg-indigo-100 text-indigo-600 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4">6</div>
                 <div>
@@ -1039,192 +1054,105 @@
             </div>
         </section>
 
-        <!-- Course Quiz -->
-        <section class="bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg p-8 mb-8">
-            <h3 class="text-2xl font-bold mb-6"><i class="fas fa-quiz mr-3"></i>Course Assessment</h3>
-            
+        <!-- Lesson 6 Quiz -->
+        <section class="bg-blue-50 rounded-lg p-8 mb-8">
+            <h3 class="text-xl font-bold mb-6 text-blue-800"><i class="fas fa-question-circle mr-3"></i>Lesson 6 Quiz</h3>
             <div class="space-y-6">
-                <!-- Quiz Question 1 -->
-                <div class="bg-white bg-opacity-10 rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-4">Question 1: Multiple Choice</h4>
-                    <p class="mb-4">According to the traditional JTB theory, knowledge requires which three things?</p>
+                <!-- Question 6.1 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 6.1: Multiple Choice</h4>
+                    <p class="mb-4">Which of the following is a challenge to knowledge in the digital age?</p>
                     <div class="space-y-2">
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q1" value="a" class="mr-3">
-                            <span>A) Belief, Truth, and Luck</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_1" value="a" class="mr-3">
+                            <span>A) Increased exposure to diverse information</span>
                         </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q1" value="b" class="mr-3">
-                            <span>B) Belief, Truth, and Justification</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_1" value="b" class="mr-3">
+                            <span>B) Spread of misinformation and "fake news"</span>
                         </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q1" value="c" class="mr-3">
-                            <span>C) Hope, Truth, and Evidence</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_1" value="c" class="mr-3">
+                            <span>C) Easier communication with experts</span>
                         </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q1" value="d" class="mr-3">
-                            <span>D) Belief, Facts, and Certainty</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_1" value="d" class="mr-3">
+                            <span>D) Faster scientific discoveries.</span>
                         </label>
                     </div>
                 </div>
 
-                <!-- Quiz Question 2 -->
-                <div class="bg-white bg-opacity-10 rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-4">Question 2: Multiple Choice</h4>
-                    <p class="mb-4">What do Gettier cases show us?</p>
+                <!-- Question 6.2 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 6.2: Multiple Choice</h4>
+                    <p class="mb-4">In the context of digital information, what is an "echo chamber"?</p>
                     <div class="space-y-2">
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q2" value="a" class="mr-3">
-                            <span>A) JTB is always sufficient for knowledge</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_2" value="a" class="mr-3">
+                            <span>A) A room designed for perfect acoustics</span>
                         </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q2" value="b" class="mr-3">
-                            <span>B) Sometimes JTB isn't enough because of lucky coincidences</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_2" value="b" class="mr-3">
+                            <span>B) A situation where individuals are exposed only to information that confirms their existing beliefs</span>
                         </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q2" value="c" class="mr-3">
-                            <span>C) Truth is not important for knowledge</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_2" value="c" class="mr-3">
+                            <span>C) A recording technique</span>
                         </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q2" value="d" class="mr-3">
-                            <span>D) Justification is impossible to achieve</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_2" value="d" class="mr-3">
+                            <span>D) A method for improving memory.</span>
                         </label>
                     </div>
                 </div>
 
-                <!-- Quiz Question 3 -->
-                <div class="bg-white bg-opacity-10 rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-4">Question 3: Multiple Choice</h4>
-                    <p class="mb-4">Which of the following is a core idea of "Foundationalism"?</p>
+                <!-- Question 6.3 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 6.3: Multiple Choice</h4>
+                    <p class="mb-4">Which epistemic virtue is crucial for navigating information-rich environments and combating misinformation?</p>
                     <div class="space-y-2">
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q3" value="a" class="mr-3">
-                            <span>A) All beliefs mutually support each other, forming a web.</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_3" value="a" class="mr-3">
+                            <span>A) Laziness</span>
                         </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q3" value="b" class="mr-3">
-                            <span>B) Knowledge is built upon certain self-evident basic beliefs.</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_3" value="b" class="mr-3">
+                            <span>B) Closed-mindedness</span>
                         </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q3" value="c" class="mr-3">
-                            <span>C) Justification involves an infinite chain of reasons.</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_3" value="c" class="mr-3">
+                            <span>C) Critical thinking</span>
                         </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q3" value="d" class="mr-3">
-                            <span>D) Knowledge primarily comes from the testimony of others.</span>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_3" value="d" class="mr-3">
+                            <span>D) Dogmatism.</span>
                         </label>
                     </div>
                 </div>
 
-                <!-- Quiz Question 4 -->
-                <div class="bg-white bg-opacity-10 rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-4">Question 4: Multiple Choice</h4>
-                    <p class="mb-4">What does "Reliabilism" primarily focus on?</p>
-                    <div class="space-y-2">
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q4" value="a" class="mr-3">
-                            <span>A) The internal logical consistency of beliefs.</span>
-                        </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q4" value="b" class="mr-3">
-                            <span>B) Whether the cognitive process forming the belief is reliable.</span>
-                        </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q4" value="c" class="mr-3">
-                            <span>C) Whether the belief can be consciously accessed.</span>
-                        </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q4" value="d" class="mr-3">
-                            <span>D) The ethical dimension of knowledge.</span>
-                        </label>
-                    </div>
+                <!-- Question 6.4 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 6.4: Short Answer</h4>
+                    <p class="mb-4">Explain how the "division of epistemic labor" both facilitates and challenges knowledge acquisition in modern society.</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="Type your answer here..."></textarea>
                 </div>
 
-                <!-- Quiz Question 5 -->
-                <div class="bg-white bg-opacity-10 rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-4">Question 5: Multiple Choice</h4>
-                    <p class="mb-4">Which of the following is NOT a famous skeptical question?</p>
-                    <div class="space-y-2">
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q5" value="a" class="mr-3">
-                            <span>A) The Dream Question</span>
-                        </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q5" value="b" class="mr-3">
-                            <span>B) The Brain in a Vat</span>
-                        </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q5" value="c" class="mr-3">
-                            <span>C) The Evil Deceiver</span>
-                        </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q5" value="d" class="mr-3">
-                            <span>D) Schrödinger's Cat</span>
-                        </label>
-                    </div>
+                <!-- Question 6.5 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 6.5: Short Answer</h4>
+                    <p class="mb-4">Describe two "digital wisdom strategies" you can use to evaluate the reliability of online information.</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="Type your answer here..."></textarea>
                 </div>
 
-                <!-- Quiz Question 6 -->
-                <div class="bg-white bg-opacity-10 rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-4">Question 6: Multiple Choice</h4>
-                    <p class="mb-4">In the digital age, which of the following is a "Digital Wisdom Strategy" for dealing with fake news?</p>
-                    <div class="space-y-2">
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q6" value="a" class="mr-3">
-                            <span>A) Only read information you agree with.</span>
-                        </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q6" value="b" class="mr-3">
-                            <span>B) Believe everything shared on social media.</span>
-                        </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q6" value="c" class="mr-3">
-                            <span>C) Check information sources and cross-reference.</span>
-                        </label>
-                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-                            <input type="radio" name="q6" value="d" class="mr-3">
-                            <span>D) Avoid any information that makes you uncomfortable.</span>
-                        </label>
-                    </div>
-                </div>
-
-                <!-- Quiz Question 7 -->
-                <div class="bg-white bg-opacity-10 rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-4">Question 7: Short Answer</h4>
-                    <p class="mb-4">Please explain what "Epistemology" is and what questions it primarily investigates.</p>
-                    <textarea class="w-full p-3 rounded bg-white bg-opacity-20 text-white placeholder-gray-300 border border-white border-opacity-30" rows="4" placeholder="Type your answer here..."></textarea>
-                </div>
-
-                <!-- Quiz Question 8 -->
-                <div class="bg-white bg-opacity-10 rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-4">Question 8: Short Answer</h4>
-                    <p class="mb-4">Provide an example that you believe meets the conditions of JTB (Justified True Belief) and explain why it meets these three conditions.</p>
-                    <textarea class="w-full p-3 rounded bg-white bg-opacity-20 text-white placeholder-gray-300 border border-white border-opacity-30" rows="4" placeholder="Type your answer here..."></textarea>
-                </div>
-
-                <!-- Quiz Question 9 -->
-                <div class="bg-white bg-opacity-10 rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-4">Question 9: Short Answer</h4>
-                    <p class="mb-4">Briefly explain the difference between "Foundationalism" and "Coherentism" in terms of justifying beliefs.</p>
-                    <textarea class="w-full p-3 rounded bg-white bg-opacity-20 text-white placeholder-gray-300 border border-white border-opacity-30" rows="4" placeholder="Type your answer here..."></textarea>
-                </div>
-
-                <!-- Quiz Question 10 -->
-                <div class="bg-white bg-opacity-10 rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-4">Question 10: Short Answer</h4>
-                    <p class="mb-4">In the digital age, why do "Echo Chambers" pose a challenge to our acquisition of true knowledge?</p>
-                    <textarea class="w-full p-3 rounded bg-white bg-opacity-20 text-white placeholder-gray-300 border border-white border-opacity-30" rows="4" placeholder="Type your answer here..."></textarea>
-                </div>
-
-                <button onclick="checkQuiz()" class="bg-yellow-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors">
-                    <i class="fas fa-check mr-2"></i>Check Answers
+                <button onclick="checkLessonQuiz(6)" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    <i class="fas fa-check mr-2"></i>Check Lesson 6 Answers
                 </button>
             </div>
         </section>
 
         <!-- Course Summary -->
         <section class="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h3 class="text-2xl font-bold mb-6 text-gray-900"><i class="fas fa-graduation-cap mr-3"></i>Course Summary</h3>
+            <h3 class="text-2xl font-bold mb-6"><i class="fas fa-graduation-cap mr-3"></i>Course Summary</h3>
             
             <div class="grid md:grid-cols-2 gap-8">
                 <div>
@@ -1306,7 +1234,7 @@
                     <ul class="space-y-2 text-sm">
                         <li>• Is absolute truth possible?</li>
                         <li>• Should we trust artificial intelligence?</li>
-                        <li>• How do we know if science is reliable?</li>
+                        <li>• • How do we know if science is reliable?</li>
                     </ul>
                 </div>
                 
