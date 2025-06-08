@@ -13,17 +13,27 @@
     <!-- Language Banner -->
     <div id="language-banner" class="bg-blue-600 text-white text-center py-2 px-4 hidden">
         <span id="banner-text"></span>
-        <button onclick="switchLanguage()" id="banner-switch" class="underline ml-2"></button>
+                    <button onclick="switchLanguage()" id="banner-switch" class="underline ml-2" title="Switch language" aria-label="Switch language">Switch</button>
         <button onclick="hideBanner()" class="ml-4 text-white hover:text-gray-200">✕</button>
     </div>
 
     <!-- Navigation Bar -->
-    <nav class="bg-gray-800 text-white p-4 sticky top-0 z-50">
+    <nav class="bg-gray-800 text-white p-4 sticky top-0 z-50 transition-transform duration-300" id="navbar">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
             <a href="#" class="text-xl font-bold" id="nav-title">Metaphysics Course</a>
             <div class="flex items-center space-x-4">
-                <div class="flex space-x-4">
+                <!-- Mobile menu button -->
+                <button class="md:hidden text-white" onclick="toggleMobileMenu()" id="mobile-menu-btn" title="Toggle menu" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <!-- Desktop navigation -->
+                <div class="hidden md:flex space-x-4" id="nav-lessons">
                     <a href="#lesson1" class="hover:text-blue-300" data-en="Lesson 1" data-zh="第一課">Lesson 1</a>
+                    <a href="#lesson2" class="hover:text-blue-300" data-en="Lesson 2" data-zh="第二課">Lesson 2</a>
+                    <a href="#lesson3" class="hover:text-blue-300" data-en="Lesson 3" data-zh="第三課">Lesson 3</a>
+                    <a href="#lesson4" class="hover:text-blue-300" data-en="Lesson 4" data-zh="第四課">Lesson 4</a>
+                    <a href="#lesson5" class="hover:text-blue-300" data-en="Lesson 5" data-zh="第五課">Lesson 5</a>
+                    <a href="#lesson6" class="hover:text-blue-300" data-en="Lesson 6" data-zh="第六課">Lesson 6</a>
                     <a href="#about" class="hover:text-blue-300" data-en="About" data-zh="關於本課程">About</a>
                 </div>
                 <div class="flex space-x-2">
@@ -34,6 +44,18 @@
                         <i class="fas fa-language mr-1"></i>中文
                     </button>
                 </div>
+            </div>
+        </div>
+        <!-- Mobile navigation menu -->
+        <div class="md:hidden hidden mt-4 pb-4" id="mobile-menu">
+            <div class="flex flex-col space-y-2">
+                <a href="#lesson1" class="hover:text-blue-300 py-2" data-en="Lesson 1" data-zh="第一課" onclick="closeMobileMenu()">Lesson 1</a>
+                <a href="#lesson2" class="hover:text-blue-300 py-2" data-en="Lesson 2" data-zh="第二課" onclick="closeMobileMenu()">Lesson 2</a>
+                <a href="#lesson3" class="hover:text-blue-300 py-2" data-en="Lesson 3" data-zh="第三課" onclick="closeMobileMenu()">Lesson 3</a>
+                <a href="#lesson4" class="hover:text-blue-300 py-2" data-en="Lesson 4" data-zh="第四課" onclick="closeMobileMenu()">Lesson 4</a>
+                <a href="#lesson5" class="hover:text-blue-300 py-2" data-en="Lesson 5" data-zh="第五課" onclick="closeMobileMenu()">Lesson 5</a>
+                <a href="#lesson6" class="hover:text-blue-300 py-2" data-en="Lesson 6" data-zh="第六課" onclick="closeMobileMenu()">Lesson 6</a>
+                <a href="#about" class="hover:text-blue-300 py-2" data-en="About" data-zh="關於本課程" onclick="closeMobileMenu()">About</a>
             </div>
         </div>
     </nav>
@@ -162,6 +184,154 @@
                 </h4>
                 <p class="text-yellow-700 lang-content" data-lang="en">Can you think of something you believed was true but later found out was false? What made you change your mind? This shows why philosophers care so much about the difference between knowledge and belief!</p>
                 <p class="text-yellow-700 lang-content hidden" data-lang="zh">你能想到你曾經相信是真的，但後來發現是假的事情嗎？是什麼讓你改變了主意？這說明了為什麼哲學家如此關心知識和信念之間的區別！</p>
+            </div>
+        </section>
+
+        <!-- Lesson 2 -->
+        <section id="lesson2" class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-8">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800" data-en="Lesson 2: Individuality and Existence" data-zh="第二課：個體性與存在">Lesson 2: Individuality and Existence</h2>
+            
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-4 text-blue-600" data-en="What are Individual Things?" data-zh="什麼是個體事物？">What are Individual Things?</h3>
+                <p class="text-gray-700 mb-4 lang-content" data-lang="en">Individual things are entities that exist independently, separate and distinct from other things in the world. However, what counts as "separate" is not always clear.</p>
+                <p class="text-gray-700 mb-4 lang-content hidden" data-lang="zh">個體事物是獨立存在的實體，與世界中的其他事物分離和區別。但是，什麼算作「分離」並不總是很清楚。</p>
+            </div>
+
+            <div class="quiz-section bg-gray-50 p-4 rounded-lg">
+                <h4 class="font-semibold mb-3" data-en="📝 Lesson 2 Quiz" data-zh="📝 第二課測驗">📝 Lesson 2 Quiz</h4>
+                <div class="mb-4">
+                    <p class="mb-2" data-en="Multiple Choice: Which theory claims that only one individual thing exists?" data-zh="選擇題：哪個理論認為只有一個個體事物存在？">Multiple Choice: Which theory claims that only one individual thing exists?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center">
+                            <input type="radio" name="q2" value="A" class="mr-2">
+                            <span data-en="A. Nihilism" data-zh="A. 虛無主義">A. Nihilism</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="q2" value="B" class="mr-2">
+                            <span data-en="B. Monism" data-zh="B. 一元論">B. Monism</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="q2" value="C" class="mr-2">
+                            <span data-en="C. Pluralism" data-zh="C. 多元論">C. Pluralism</span>
+                        </label>
+                    </div>
+                    <button onclick="checkAnswer('q2', 'B')" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" data-en="Check Answer" data-zh="檢查答案">Check Answer</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson 3 -->
+        <section id="lesson3" class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-8">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800" data-en="Lesson 3: Properties and Relations" data-zh="第三課：屬性與關係">Lesson 3: Properties and Relations</h2>
+            
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-4 text-blue-600" data-en="What are Properties?" data-zh="什麼是屬性？">What are Properties?</h3>
+                <p class="text-gray-700 mb-4 lang-content" data-lang="en">Properties are characteristics that things have. For example, redness, roundness, or being tall. But do properties exist independently of the things that have them?</p>
+                <p class="text-gray-700 mb-4 lang-content hidden" data-lang="zh">屬性是事物所具有的特徵。例如，紅色、圓形或高大。但是屬性是否獨立於具有它們的事物而存在？</p>
+            </div>
+
+            <div class="quiz-section bg-gray-50 p-4 rounded-lg">
+                <h4 class="font-semibold mb-3" data-en="📝 Lesson 3 Quiz" data-zh="📝 第三課測驗">📝 Lesson 3 Quiz</h4>
+                <div class="mb-4">
+                    <p class="mb-2" data-en="Short Answer: Give an example of a property and explain whether you think it exists independently." data-zh="問答題：舉一個屬性的例子，並解釋你認為它是否獨立存在。">Short Answer: Give an example of a property and explain whether you think it exists independently.</p>
+                    <textarea class="w-full p-2 border rounded" rows="3" placeholder="Type your answer here..."></textarea>
+                    <button class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600" data-en="Save Answer" data-zh="保存答案">Save Answer</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson 4 -->
+        <section id="lesson4" class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-8">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800" data-en="Lesson 4: The Mind-Body Problem" data-zh="第四課：心身問題">Lesson 4: The Mind-Body Problem</h2>
+            
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-4 text-blue-600" data-en="What is the Mind-Body Problem?" data-zh="什麼是心身問題？">What is the Mind-Body Problem?</h3>
+                <p class="text-gray-700 mb-4 lang-content" data-lang="en">How does the mind relate to the body? Are they the same thing, or are they different? This is one of the most important questions in philosophy.</p>
+                <p class="text-gray-700 mb-4 lang-content hidden" data-lang="zh">心靈如何與身體相關？它們是同一個東西，還是不同的？這是哲學中最重要的問題之一。</p>
+            </div>
+
+            <div class="quiz-section bg-gray-50 p-4 rounded-lg">
+                <h4 class="font-semibold mb-3" data-en="📝 Lesson 4 Quiz" data-zh="📝 第四課測驗">📝 Lesson 4 Quiz</h4>
+                <div class="mb-4">
+                    <p class="mb-2" data-en="Multiple Choice: Which theory claims that mind and body are completely separate substances?" data-zh="選擇題：哪個理論認為心靈和身體是完全分離的實體？">Multiple Choice: Which theory claims that mind and body are completely separate substances?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center">
+                            <input type="radio" name="q4" value="A" class="mr-2">
+                            <span data-en="A. Materialism" data-zh="A. 物質主義">A. Materialism</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="q4" value="B" class="mr-2">
+                            <span data-en="B. Dualism" data-zh="B. 二元論">B. Dualism</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="q4" value="C" class="mr-2">
+                            <span data-en="C. Idealism" data-zh="C. 觀念論">C. Idealism</span>
+                        </label>
+                    </div>
+                    <button onclick="checkAnswer('q4', 'B')" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" data-en="Check Answer" data-zh="檢查答案">Check Answer</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson 5 -->
+        <section id="lesson5" class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-8">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800" data-en="Lesson 5: Free Will and Determinism" data-zh="第五課：自由意志與決定論">Lesson 5: Free Will and Determinism</h2>
+            
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-4 text-blue-600" data-en="Do We Have Free Will?" data-zh="我們有自由意志嗎？">Do We Have Free Will?</h3>
+                <p class="text-gray-700 mb-4 lang-content" data-lang="en">If everything in the universe follows physical laws, do we really have free will? Or are all our choices determined by prior causes?</p>
+                <p class="text-gray-700 mb-4 lang-content hidden" data-lang="zh">如果宇宙中的一切都遵循物理定律，我們真的有自由意志嗎？還是我們所有的選擇都由先前的原因決定？</p>
+            </div>
+
+            <div class="quiz-section bg-gray-50 p-4 rounded-lg">
+                <h4 class="font-semibold mb-3" data-en="📝 Lesson 5 Quiz" data-zh="📝 第五課測驗">📝 Lesson 5 Quiz</h4>
+                <div class="mb-4">
+                    <p class="mb-2" data-en="Reflection: Do you think you have free will? Explain your reasoning." data-zh="思考題：你認為你有自由意志嗎？解釋你的理由。">Reflection: Do you think you have free will? Explain your reasoning.</p>
+                    <textarea class="w-full p-2 border rounded" rows="4" placeholder="Share your thoughts..."></textarea>
+                    <button class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600" data-en="Save Reflection" data-zh="保存思考">Save Reflection</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson 6 -->
+        <section id="lesson6" class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-8">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800" data-en="Lesson 6: God and the Universe" data-zh="第六課：上帝與宇宙">Lesson 6: God and the Universe</h2>
+            
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-4 text-blue-600" data-en="Does God Exist?" data-zh="上帝存在嗎？">Does God Exist?</h3>
+                <p class="text-gray-700 mb-4 lang-content" data-lang="en">This lesson explores different arguments for and against the existence of God, including the cosmological argument and the problem of evil.</p>
+                <p class="text-gray-700 mb-4 lang-content hidden" data-lang="zh">本課探討支持和反對上帝存在的不同論證，包括宇宙論證和邪惡問題。</p>
+            </div>
+
+            <div class="quiz-section bg-gray-50 p-4 rounded-lg">
+                <h4 class="font-semibold mb-3" data-en="📝 Lesson 6 Quiz" data-zh="📝 第六課測驗">📝 Lesson 6 Quiz</h4>
+                <div class="mb-4">
+                    <p class="mb-2" data-en="Multiple Choice: The cosmological argument is based on which principle?" data-zh="選擇題：宇宙論證基於哪個原則？">Multiple Choice: The cosmological argument is based on which principle?</p>
+                    <div class="space-y-2">
+                        <label class="flex items-center">
+                            <input type="radio" name="q6" value="A" class="mr-2">
+                            <span data-en="A. Everything must have a cause" data-zh="A. 一切都必須有原因">A. Everything must have a cause</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="q6" value="B" class="mr-2">
+                            <span data-en="B. Perfect beings must exist" data-zh="B. 完美的存在必須存在">B. Perfect beings must exist</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="q6" value="C" class="mr-2">
+                            <span data-en="C. The universe is designed" data-zh="C. 宇宙是被設計的">C. The universe is designed</span>
+                        </label>
+                    </div>
+                    <button onclick="checkAnswer('q6', 'A')" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" data-en="Check Answer" data-zh="檢查答案">Check Answer</button>
+                </div>
+            </div>
+
+            <!-- Course Completion -->
+            <div class="mt-8 p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
+                <h3 class="text-xl font-semibold mb-4 text-green-800" data-en="🎉 Congratulations!" data-zh="🎉 恭喜！">🎉 Congratulations!</h3>
+                <p class="text-green-700 mb-4 lang-content" data-lang="en">You have completed all six lessons of Introduction to Metaphysics. You've explored fundamental questions about reality, existence, mind, free will, and the divine.</p>
+                <p class="text-green-700 mb-4 lang-content hidden" data-lang="zh">您已完成形上學入門的全部六課。您已探索了關於真實、存在、心靈、自由意志和神聖的基本問題。</p>
+                <p class="text-green-700 lang-content" data-lang="en">Remember: Philosophy is not about finding final answers, but about learning to think deeply and ask better questions.</p>
+                <p class="text-green-700 lang-content hidden" data-lang="zh">記住：哲學不是要找到最終答案，而是要學會深度思考和提出更好的問題。</p>
             </div>
         </section>
 
@@ -437,9 +607,76 @@
             }
         }
 
+        // Auto-hide navigation functionality
+        let lastScrollTop = 0;
+        let scrollTimeout;
+
+        function handleScroll() {
+            const navbar = document.getElementById('navbar');
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (currentScroll > lastScrollTop && currentScroll > 100) {
+                // Scrolling down & past 100px
+                navbar.style.transform = 'translateY(-100%)';
+            } else {
+                // Scrolling up
+                navbar.style.transform = 'translateY(0)';
+            }
+            
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+            
+            // Clear existing timeout
+            clearTimeout(scrollTimeout);
+            
+            // Show navbar after scrolling stops
+            scrollTimeout = setTimeout(() => {
+                navbar.style.transform = 'translateY(0)';
+            }, 1000);
+        }
+
+        // Mobile menu functions
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+                menuBtn.innerHTML = '<i class="fas fa-times"></i>';
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        }
+
+        function closeMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            
+            mobileMenu.classList.add('hidden');
+            menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        }
+
+        // Quiz functionality
+        function checkAnswer(questionName, correctAnswer) {
+            const selected = document.querySelector(`input[name="${questionName}"]:checked`);
+            if (!selected) {
+                alert(currentLanguage === 'zh' ? '請選擇一個答案' : 'Please select an answer');
+                return;
+            }
+            
+            if (selected.value === correctAnswer) {
+                alert(currentLanguage === 'zh' ? '正確！' : 'Correct!');
+            } else {
+                alert(currentLanguage === 'zh' ? '不正確，請再試一次' : 'Incorrect, please try again');
+            }
+        }
+
         // Initialize everything when page loads
         document.addEventListener('DOMContentLoaded', function() {
             initializeLanguage();
+            
+            // Add scroll listener for auto-hide navigation
+            window.addEventListener('scroll', handleScroll, { passive: true });
         });
     </script>
 </body>
