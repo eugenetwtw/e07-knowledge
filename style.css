@@ -1,0 +1,12 @@
+body { font-family: 'Inter', sans-serif; }
+.lesson-card { 
+    transition: all 0.3s ease; 
+    scroll-margin-top: 64px; /* Adjust this value based on your fixed header's height */
+}
+.lesson-card:hover { transform: translateY(-2px); }
+.quiz-option { transition: all 0.2s ease; }
+.quiz-option:hover { background-color: #f3f4f6; }
+.correct { background-color: #d1fae5 !important; border-color: #059669; }
+.incorrect { background-color: #fee2e2 !important; border-color: #dc2626; }
+.term-box { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.progress-bar { transition: width 0.5s ease; }

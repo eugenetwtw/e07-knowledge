@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Epistemology Course</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 text-white p-4 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold">Epistemology Course</a>
+            <div class="flex space-x-4">
+                <a href="#lesson1" class="hover:text-blue-300">Lesson 1</a>
+                <a href="#lesson2" class="hover:text-blue-300">Lesson 2</a>
+                <a href="#lesson3" class="hover:text-blue-300">Lesson 3</a>
+                <a href="#lesson4" class="hover:text-blue-300">Lesson 4</a>
+                <a href="#lesson5" class="hover:text-blue-300">Lesson 5</a>
+                <a href="#lesson6" class="hover:text-blue-300">Lesson 6</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-2xl font-bold text-gray-900">Introduction to Epistemology</h1>
+                    <p class="text-gray-600">A Course for Middle School Students</p>
+                    <p class="text-gray-600 text-sm mt-1">Based on Duncan Pritchard's "<a href="https://www.amazon.com/What-This-Thing-Called-Knowledge/dp/0415658159" target="_blank" class="text-blue-600 hover:underline">What Is This Thing Called Knowledge?</a>"</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="bg-blue-100 px-3 py-1 rounded-full">
+                        <span class="text-blue-800 text-sm font-medium">6 Lessons</span>
+                    </div>
+                    <a href="index_zh.html" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors">
+                        <i class="fas fa-language mr-2"></i>中文版
+                    </a>
+                    <a href="index.html" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                        <i class="fas fa-language mr-2"></i>English Version
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Course Introduction -->
+    <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold mb-4">What is Knowledge?</h2>
+                <p class="text-xl mb-6">Explore the fascinating world of epistemology - the study of knowledge itself!</p>
+                <div class="bg-white bg-opacity-20 rounded-lg p-6 max-w-2xl mx-auto">
+                    <p class="text-lg">In this course, you'll discover how philosophers have tried to answer questions like: How do we know what we know? What's the difference between believing something and knowing it? Can we ever be certain about anything?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Progress -->
+    <section class="bg-white py-6">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="bg-gray-200 rounded-full h-3 mb-4">
+                <div class="progress-bar bg-blue-600 h-3 rounded-full" style="width: 0%" id="progressBar"></div>
+            </div>
+            <p class="text-center text-gray-600" id="progressText">Ready to start your journey!</p>
+        </div>
+    </section>
+
+    <!-- Lessons -->
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        
+        <!-- Lesson 1: What is Knowledge? -->
+        <section class="lesson-card bg-white rounded-lg shadow-lg p-8 mb-8" id="lesson1">
+            <div class="flex items-center mb-6">
+                <div class="bg-blue-100 text-blue-600 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4">1</div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">What is Knowledge?</h3>
+                    <p class="text-gray-600">Introduction to Epistemology</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-blue-600"><i class="fas fa-bullseye mr-2"></i>Learning Objectives</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i>Understand what epistemology studies</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i>Distinguish between knowledge and belief</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i>Recognize why knowledge matters</li>
+                    </ul>
+                </div>
+                <div class="term-box text-white p-6 rounded-lg">
+                    <h4 class="text-lg font-semibold mb-4"><i class="fas fa-book mr-2"></i>Key Terms</h4>
+                    <div class="space-y-2">
+                        <div><strong>Epistemology</strong>: The study of knowledge</div>
+                        <div><strong>Knowledge</strong>: Justified true belief</div>
+                        <div><strong>Belief</strong>: What we think is true</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h4 class="text-lg font-semibold mb-4 text-gray-800"><i class="fas fa-lightbulb mr-2"></i>Lesson Content</h4>
+                <div class="prose prose-lg text-gray-700">
+                    <p>Imagine you're looking outside and see wet streets. You think to yourself, "It must have rained." But how do you <em>know</em> this? What if someone just washed their car? This simple example shows us the difference between believing something and actually knowing it.</p>
+                    
+                    <p><strong>Epistemology</strong> is the branch of philosophy that asks these big questions about knowledge. Philosophers have been trying to figure out what knowledge really is for over 2,000 years!</p>
+                    
+                    <p>The journey into understanding knowledge begins with delving into the historical and philosophical foundations of epistemology, the branch of philosophy dedicated to studying knowledge. This scholarship has its roots deeply embedded in the works of ancient philosophers such as Plato and Aristotle, who laid the groundwork for subsequent debates and inquiries. One of the most enduring questions that these philosophers grappled with is: What does it mean to know something? This question forms the core of epistemology and continues to inspire exploration and debate among scholars.</p>
+
+                    <p>In simple terms, knowledge is often perceived as a crucial element of everyday life, shaping our interactions, decisions, and understanding of the world. It's not just a scholarly abstraction but a practical asset; informed decisions in day-to-day activities, professional fields, and problem-solving scenarios all rely on what we consider to be true and justified knowledge. Yet, despite its apparent simplicity, the concept of knowledge is laden with complexities that philosophers strive to unravel.</p>
+
+                    <p>The significance of knowledge in scholarly discourse can hardly be overstated. In academia, knowledge underpins the advancement of disciplines, guiding theory and experiment. It serves as the foundation for building logical arguments, fostering innovation, and nurturing intellectual growth. Beyond intellectual applications, epistemology probes into the everyday dynamics of belief formation, the credence given to various sources, and the reliability and justification of what we claim to know.</p>
+
+                    <p>Key questions and themes addressed in Duncan Pritchard's "What Is This Thing Called Knowledge?" include not only the classical definition and the philosophical underpinnings of knowledge but also the challenges posed by skeptical arguments and the societal context within which knowledge is situated. The book promises a thorough examination of how knowledge is structured, its justification, and the evolving nature of epistemology faced with contemporary challenges. By doing so, it aims to offer a comprehensive understanding that bridges historical perspectives with modern inquiries.</p>
+                    
+                    <p>Think about these everyday situations:</p>
+                    <ul>
+                        <li>You "know" 2+2=4, but how?</li>
+                        <li>You "know" your friend's name, but what if you misremembered?</li>
+                        <li>You "know" the Earth is round, but have you seen it yourself?</li>
+                    </ul>
+                    
+                    <p>Knowledge seems different from just believing or guessing. When we say we "know" something, we usually mean we're confident it's true and we have good reasons for thinking so.</p>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-yellow-50 p-6 rounded-lg">
+                <h4 class="text-lg font-semibold mb-4 text-yellow-800"><i class="fas fa-question-circle mr-2"></i>Think About This</h4>
+                <p class="text-yellow-700">Can you think of something you believed was true but later found out was false? What made you change your mind? This shows why philosophers care so much about the difference between knowledge and belief!</p>
+            </div>
+        </section>
+
+        <!-- Lesson 1 Quiz -->
+        <section class="bg-blue-50 rounded-lg p-8 mb-8">
+            <h3 class="text-xl font-bold mb-6 text-blue-800"><i class="fas fa-question-circle mr-3"></i>Lesson 1 Quiz</h3>
+            <div class="space-y-6">
+                <!-- Question 1.1 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 1.1: Multiple Choice</h4>
+                    <p class="mb-4">What is the primary focus of epistemology?</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_1" value="a" class="mr-3">
+                            <span>A) The study of ethics</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_1" value="b" class="mr-3">
+                            <span>B) The study of knowledge</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_1" value="c" class="mr-3">
+                            <span>C) The study of art</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_1" value="d" class="mr-3">
+                            <span>D) The study of logic</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 1.2 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 1.2: Multiple Choice</h4>
+                    <p class="mb-4">According to the lesson, what is the main difference between believing something and knowing something?</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_2" value="a" class="mr-3">
+                            <span>A) Belief requires more confidence than knowledge</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_2" value="b" class="mr-3">
+                            <span>B) Knowledge requires good reasons, while belief does not necessarily</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_2" value="c" class="mr-3">
+                            <span>C) Belief is always true, while knowledge can be false</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_2" value="d" class="mr-3">
+                            <span>D) There is no difference; they are the same.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 1.3 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 1.3: Multiple Choice</h4>
+                    <p class="mb-4">Which ancient philosophers are mentioned as laying the groundwork for epistemology?</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_3" value="a" class="mr-3">
+                            <span>A) Socrates and Aristotle</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_3" value="b" class="mr-3">
+                            <span>B) Plato and Aristotle</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_3" value="c" class="mr-3">
+                            <span>C) Descartes and Plato</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q1_3" value="d" class="mr-3">
+                            <span>D) Kant and Hume</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 1.4 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 1.4: Short Answer</h4>
+                    <p class="mb-4">Explain in your own words why knowledge is considered a "practical asset" in everyday life.</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="Type your answer here..."></textarea>
+                </div>
+
+                <!-- Question 1.5 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 1.5: Short Answer</h4>
+                    <p class="mb-4">Can you give an example from your own experience where you believed something, but later found out it was false? What made you change your mind?</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="Type your answer here..."></textarea>
+                </div>
+
+                <button onclick="checkLessonQuiz(1)" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    <i class="fas fa-check mr-2"></i>Check Lesson 1 Answers
+                </button>
+            </div>
+        </section>
+
+        <!-- Lesson 2: Truth, Belief, and Justification -->
+        <section class="lesson-card bg-white rounded-lg shadow-lg p-8 mb-8" id="lesson2">
+            <div class="flex items-center mb-6">
+                <div class="bg-green-100 text-green-600 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4">2</div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Truth, Belief, and Justification</h3>
+                    <p class="text-gray-600">The Traditional Theory of Knowledge</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-green-600"><i class="fas fa-bullseye mr-2"></i>Learning Objectives</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i>Learn the three parts of knowledge</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i>Understand what justification means</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i>Apply the JTB theory to examples</li>
+                    </ul>
+                </div>
+                <div class="term-box text-white p-6 rounded-lg">
+                    <h4 class="text-lg font-semibold mb-4"><i class="fas fa-book mr-2"></i>Key Terms</h4>
+                    <div class="space-y-2">
+                        <div><strong>JTB Theory</strong>: Justified True Belief</div>
+                        <div><strong>Truth</strong>: What matches reality</div>
+                        <div><strong>Belief</strong>: What we think is true</div>
+                        <div><strong>Justification</strong>: Good reasons for believing</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h4 class="text-lg font-semibold mb-4 text-gray-800"><i class="fas fa-lightbulb mr-2"></i>Lesson Content</h4>
+                <div class="prose prose-lg text-gray-700">
+                    <p>For centuries, philosophers thought they had figured out what knowledge is. They called it <strong>Justified True Belief (JTB)</strong>. According to this theory, for something to count as knowledge, it needs three things:</p>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg my-6">
+                        <h5 class="font-semibold text-blue-800 mb-3">The Three Parts of Knowledge:</h5>
+                        <ol class="list-decimal list-inside space-y-2 text-blue-700">
+                            <li><strong>Belief</strong> - You must believe it's true</li>
+                            <li><strong>Truth</strong> - It must actually be true</li>
+                            <li><strong>Justification</strong> - You must have good reasons for believing it</li>
+                        </ol>
+                    </div>
+
+                    <p>In the realm of epistemology, the traditional analysis of knowledge is famously encapsulated by the tripartite definition of knowledge as "Justified True Belief" (JTB). This classical approach, which dates back to the philosopher Plato, stipulates three conditions that a belief must meet to be considered knowledge: it must be true, it must be believed, and it must be justified. This tripartite model has been foundational in philosophical discussions about knowledge, providing a structured and seemingly clear framework for evaluating knowledge claims.</p>
+
+                    <p>The first condition, <strong>truth</strong>, posits that for one to know something, it must indeed be the case. A belief that is false cannot constitute knowledge, as knowledge is, by nature, a connection to reality. The second condition, <strong>belief</strong>, requires that the individual genuinely holds the proposition to be true. It wouldn't make sense to claim someone knows something if they do not even believe in it themselves. The third condition, <strong>justification</strong>, asserts that one's belief must be supported by sufficient evidence or reasons. This prevents true beliefs formed by random guesses or luck from being classified as knowledge.</p>
+                    
+                    <p>Let's use an example: "I know the library closes at 5 PM."</p>
+                    <ul>
+                        <li><strong>Belief:</strong> I believe the library closes at 5 PM</li>
+                        <li><strong>Truth:</strong> The library actually does close at 5 PM</li>
+                        <li><strong>Justification:</strong> I checked the library's website yesterday</li>
+                    </ul>
+                    
+                    <p>But what if one of these is missing? If I believe it and it's true, but I just guessed randomly, do I really "know" it? Most people would say no - lucky guesses don't count as knowledge.</p>
+
+                    <p>However, despite its widespread acceptance, the JTB model has faced significant scrutiny and criticism, primarily due to the identification of what are known as Gettier problems. In a seminal 1963 paper, Edmund Gettier presented cases that appeared to challenge the sufficiency of the traditional JTB analysis. These Gettier cases illustrated situations where all three conditions of the JTB model were met, yet it seemed counterintuitive to say that the individuals involved possessed knowledge.</p>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-green-50 p-6 rounded-lg">
+                <h4 class="text-lg font-semibold mb-4 text-green-800"><i class="fas fa-brain mr-2"></i>Practice Activity</h4>
+                <p class="text-green-700 mb-4">For each scenario below, identify whether it meets all three conditions of JTB:</p>
+                <div class="space-y-2 text-green-700">
+                    <p>1. Sarah believes her math test is on Friday because she wrote it in her planner, and it really is on Friday.</p>
+                    <p>2. Tom thinks it will rain because he has a "feeling," and it does rain.</p>
+                    <p>3. Lisa believes her favorite team will win because she always believes that, but they lose.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson 2 Quiz -->
+        <section class="bg-blue-50 rounded-lg p-8 mb-8">
+            <h3 class="text-xl font-bold mb-6 text-blue-800"><i class="fas fa-question-circle mr-3"></i>Lesson 2 Quiz</h3>
+            <div class="space-y-6">
+                <!-- Question 2.1 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 2.1: Multiple Choice</h4>
+                    <p class="mb-4">According to the JTB theory, which of the following is NOT a necessary condition for knowledge?</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_1" value="a" class="mr-3">
+                            <span>A) Belief</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_1" value="b" class="mr-3">
+                            <span>B) Truth</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_1" value="c" class="mr-3">
+                            <span>C) Justification</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_1" value="d" class="mr-3">
+                            <span>D) Certainty</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 2.2 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 2.2: Multiple Choice</h4>
+                    <p class="mb-4">The traditional JTB analysis of knowledge dates back to which philosopher?</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_2" value="a" class="mr-3">
+                            <span>A) Aristotle</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_2" value="b" class="mr-3">
+                            <span>B) Descartes</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_2" value="c" class="mr-3">
+                            <span>C) Plato</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_2" value="d" class="mr-3">
+                            <span>D) Gettier</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 2.3 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 2.3: Multiple Choice</h4>
+                    <p class="mb-4">What is the purpose of the "justification" condition in the JTB theory?</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_3" value="a" class="mr-3">
+                            <span>A) To ensure the belief is popular</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_3" value="b" class="mr-3">
+                            <span>B) To prevent true beliefs formed by random guesses from being classified as knowledge</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_3" value="c" class="mr-3">
+                            <span>C) To make the belief more complex</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q2_3" value="d" class="mr-3">
+                            <span>D) To make the belief easier to remember.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 2.4 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 2.4: Short Answer</h4>
+                    <p class="mb-4">Explain why a "lucky guess" that turns out to be true is generally not considered knowledge according to the JTB theory.</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="Type your answer here..."></textarea>
+                </div>
+
+                <!-- Question 2.5 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 2.5: Short Answer</h4>
+                    <p class="mb-4">Give an example of a true belief you have that you think is *not* justified. Explain why.</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="Type your answer here..."></textarea>
+                </div>
+
+                <button onclick="checkLessonQuiz(2)" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    <i class="fas fa-check mr-2"></i>Check Lesson 2 Answers
+                </button>
+            </div>
+        </section>
+
+        <!-- Lesson 3: The Gettier Problem -->
+        <section class="lesson-card bg-white rounded-lg shadow-lg p-8 mb-8" id="lesson3">
+            <div class="flex items-center mb-6">
+                <div class="bg-purple-100 text-purple-600 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4">3</div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">The Gettier Problem</h3>
+                    <p class="text-gray-600">When JTB Isn't Enough</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-purple-600"><i class="fas fa-bullseye mr-2"></i>Learning Objectives</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i>Understand what Gettier cases are</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i>See why JTB might not be enough</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i>Recognize lucky true beliefs</li>
+                    </ul>
+                </div>
+                <div class="term-box text-white p-6 rounded-lg">
+                    <h4 class="text-lg font-semibold mb-4"><i class="fas fa-book mr-2"></i>Key Terms</h4>
+                    <div class="space-y-2">
+                        <div><strong>Gettier Case</strong>: JTB that seems like luck</div>
+                        <div><strong>Lucky Truth</strong>: True by accident</div>
+                        <div><strong>Reliability</strong>: Trustworthy method</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h4 class="text-lg font-semibold mb-4 text-gray-800"><i class="fas fa-lightbulb mr-2"></i>Lesson Content</h4>
+                <div class="prose prose-lg text-gray-700">
+                    <p>In 1963, a philosopher named Edmund Gettier created examples that shocked the philosophy world. He showed cases where someone had justified true belief, but it didn't seem like real knowledge because of bad luck turning into good luck.</p>
+                    
+                    <p>The Gettier problem serves as a pivotal moment in the history of epistemology, challenging the long-standing traditional analysis of knowledge as justified true belief (JTB). Edmund Gettier's counterexamples demonstrated that having a belief that is true and justified does not necessarily constitute knowledge, thereby exposing vulnerabilities in the classical tripartite approach. This problem spurred a multitude of philosophical responses, each aiming to revise or supplement the traditional definition to better capture the essence of knowledge.</p>
+
+                    <div class="bg-purple-50 p-6 rounded-lg my-6">
+                        <h5 class="font-semibold text-purple-800 mb-3">Classic Gettier Case: The Job Interview</h5>
+                        <p class="text-purple-700">Alex believes "The person who gets the job has 10 coins in their pocket" because:</p>
+                        <ul class="list-disc list-inside mt-2 space-y-1 text-purple-700">
+                            <li>The boss told Alex that Ben will get the job</li>
+                            <li>Alex saw Ben count 10 coins from his pocket</li>
+                            <li>So Alex concludes: "The person who gets the job has 10 coins"</li>
+                        </ul>
+                        <p class="text-purple-700 mt-3">Plot twist: Alex actually gets the job (surprise!), and Alex happens to have 10 coins too. So Alex's belief is true, justified, and believed... but it feels like luck, not knowledge.</p>
+                    </div>
+                    
+                    <p>This creates a big problem! The JTB theory says Alex has knowledge, but it feels wrong because Alex was right for the wrong reasons.</p>
+                    
+                    <p>Gettier cases show us that sometimes we can have all three parts of JTB, but still not have real knowledge because we got lucky. This made philosophers realize they needed to add something more to their definition of knowledge.</p>
+
+                    <p>One notable response to the Gettier problem involves the introduction of a fourth condition to the JTB framework, known as the "no false lemmas" criterion. This additional requirement stipulates that for a belief to count as knowledge, it must not be based on any false premises or assumptions. While this approach attempts to address the issues raised by Gettier, it has faced criticisms for not fully resolving all possible counterexamples, particularly those involving complex or indirect justifications.</p>
+
+                    <p>Another influential response comes from the realm of reliabilism, which shifts the focus from the internal aspects of justification to the reliability of the belief-forming process. According to reliabilism, a belief counts as knowledge if it is produced by a cognitive process that reliably yields true beliefs. This externalist perspective emphasizes the importance of the methods and mechanisms underlying belief formation, rather than the specific justificatory relationships among beliefs. Reliabilism offers a more flexible framework that can accommodate a broader range of knowledge-seeking activities, such as perceptual and testimonial knowledge.</p>
+
+                    <p>Virtue epistemology presents yet another alternative, concentrating on the intellectual virtues of the knower. This approach suggests that knowledge is a true belief arising from the exercise of intellectual virtues, such as open-mindedness, intellectual courage, and intellectual tenacity. By focusing on the character and cognitive abilities of the individual, virtue epistemology provides a more holistic understanding of knowledge that integrates ethical and epistemic dimensions. This perspective also aligns with the idea that knowledge is not merely a static state but an active pursuit involving the cultivation of good cognitive habits.</p>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-red-50 p-6 rounded-lg">
+                <h4 class="text-lg font-semibold mb-4 text-red-800"><i class="fas fa-exclamation-triangle mr-2"></i>Think About This</h4>
+                <p class="text-red-700">Have you ever been right about something but for the wrong reasons? For example, guessing the right answer on a test question you didn't study? Does that count as "knowing" the answer?</p>
+            </div>
+        </section>
+
+        <!-- Lesson 3 Quiz -->
+        <section class="bg-blue-50 rounded-lg p-8 mb-8">
+            <h3 class="text-xl font-bold mb-6 text-blue-800"><i class="fas fa-question-circle mr-3"></i>Lesson 3 Quiz</h3>
+            <div class="space-y-6">
+                <!-- Question 3.1 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 3.1: Multiple Choice</h4>
+                    <p class="mb-4">What is the main purpose of Gettier cases?</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_1" value="a" class="mr-3">
+                            <span>A) To prove the JTB theory is always correct</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_1" value="b" class="mr-3">
+                            <span>B) To show that JTB is not always sufficient for knowledge</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_1" value="c" class="mr-3">
+                            <span>C) To introduce new types of knowledge</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_1" value="d" class="mr-3">
+                            <span>D) To simplify the definition of knowledge.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 3.2 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 3.2: Multiple Choice</h4>
+                    <p class="mb-4">Which of the following is a response to the Gettier problem that focuses on the reliability of the belief-forming process?</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_2" value="a" class="mr-3">
+                            <span>A) Foundationalism</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_2" value="b" class="mr-3">
+                            <span>B) Coherentism</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_2" value="c" class="mr-3">
+                            <span>C) Reliabilism</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_2" value="d" class="mr-3">
+                            <span>D) Virtue Epistemology</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 3.3 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 3.3: Multiple Choice</h4>
+                    <p class="mb-4">What does the "no false lemmas" criterion suggest for a belief to count as knowledge?</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_3" value="a" class="mr-3">
+                            <span>A) It must be based on a popular opinion</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_3" value="b" class="mr-3">
+                            <span>B) It must not be based on any false premises</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_3" value="c" class="mr-3">
+                            <span>C) It must be a simple belief</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q3_3" value="d" class="mr-3">
+                            <span>D) It must be a belief that everyone agrees with.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 3.4 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 3.4: Short Answer</h4>
+                    <p class="mb-4">Explain the "Job Interview" Gettier case in your own words and why it challenges the JTB theory.</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="Type your answer here..."></textarea>
+                </div>
+
+                <!-- Question 3.5 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 3.5: Short Answer</h4>
+                    <p class="mb-4">How does "Virtue Epistemology" propose to define knowledge differently from the traditional JTB theory?</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="Type your answer here..."></textarea>
+                </div>
+
+                <button onclick="checkLessonQuiz(3)" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    <i class="fas fa-check mr-2"></i>Check Lesson 3 Answers
+                </button>
+            </div>
+        </section>
+
+        <!-- Lesson 4: How Do We Justify Our Beliefs? -->
+        <section class="lesson-card bg-white rounded-lg shadow-lg p-8 mb-8" id="lesson4">
+            <div class="flex items-center mb-6">
+                <div class="bg-orange-100 text-orange-600 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4">4</div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">How Do We Justify Our Beliefs?</h3>
+                    <p class="text-gray-600">Sources of Knowledge and Justification</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-orange-600"><i class="fas fa-bullseye mr-2"></i>Learning Objectives</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i>Identify different types of justification</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i>Understand basic vs. derived beliefs</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i>Recognize reliable vs. unreliable sources</li>
+                    </ul>
+                </div>
+                <div class="term-box text-white p-6 rounded-lg">
+                    <h4 class="text-lg font-semibold mb-4"><i class="fas fa-book mr-2"></i>Key Terms</h4>
+                    <div class="space-y-2">
+                        <div><strong>Foundationalism</strong>: Basic beliefs support others</div>
+                        <div><strong>Coherentism</strong>: Beliefs support each other</div>
+                        <div><strong>Testimony</strong>: Learning from others</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h4 class="text-lg font-semibold mb-4 text-gray-800"><i class="fas fa-lightbulb mr-2"></i>Lesson Content</h4>
+                <div class="prose prose-lg text-gray-700">
+                    <p>Now that we know justification is important for knowledge, let's explore where our justifications come from. How do we get good reasons for our beliefs?</p>
+                    
+                    <p>In exploring the nature and structure of justification, Duncan Pritchard navigates through several diverse theories that aim to elucidate what it means for a belief to be justified. He delves into foundationalism, coherentism, and infinitism, each presenting a unique perspective on how beliefs gain their justificatory status.</p>
+
+                    <p><strong>Foundationalism</strong> posits that knowledge structures resemble a building with secure, self-evident beliefs acting as the foundation. These foundational beliefs support other higher-level beliefs, providing a hierarchical framework where the latter’s justification traces back to the unshakable truths at the base. Pritchard highlights the appeal of foundationalism in its promise of certainty and stability within our web of beliefs. However, he also points out its significant challenges, such as the difficulty in identifying truly foundational beliefs that are immune to all doubt and the potential arbitrariness of deemed foundational truths.</p>
+
+                    <p>In contrast, <strong>coherentism</strong> offers a holistic approach, suggesting that beliefs are justified by virtue of their coherence with the rest of the belief system. Unlike foundationalism, coherentism dismisses the need for indubitable foundations, proposing instead that the mutual support among beliefs within a coherent set lends justification. Pritchard elaborates on the strengths of coherentism, including its resilience against skeptical attacks which target specific foundational beliefs. However, he also notes the criticisms it faces, such as the isolation problem (the idea that a coherent set of beliefs might still be disconnected from reality) and the challenge of defining coherence in a non-circular manner.</p>
+
+                    <p><strong>Infinitism</strong>, the lesser-known theory, posits that justification involves an infinite, non-repetitive chain of reasons. This perspective, Pritchard explains, avoids the foundationalism’s endpoint and coherentism’s circularity by allowing each belief to be justified by an ever-extending series of reasons. While infinitism offers an intriguing solution, it confronts significant practical concerns, such as the finite nature of human cognition and whether an infinite regress is conceivable or practical for actual human thinkers.</p>
+
+                    <p>Beyond these structural theories, Pritchard thoroughly examines the role of evidence and reasoning in justifying beliefs. He emphasizes the weight given to different types of evidence—empirical, logical, anecdotal—and how reasoning connects evidence to conclusions. This analysis underscores that justification is not merely about possessing evidence but also about appropriately referencing and reflecting upon it within a structured framework of reasoning.</p>
+
+                    <p>A critical debate within the realm of justification is the dichotomy between <strong>internalism</strong> and <strong>externalism</strong>. Internalism insists that justification must be accessible to the believer's consciousness. That is, a person must be aware of or have access to the reasons or evidence that justify their belief. This viewpoint champions introspective and reflective access to justification, fostering a sense of self-sufficiency and epistemic responsibility. However, Pritchard discusses its potential downsides, such as placing onerous demands on the cognitive resources of the knower and excluding relevant external factors that might be just as pivotal.</p>
+
+                    <p>On the other hand, <strong>externalism</strong> maintains that factors external to the believer's cognitive perspective—such as the reliability of the belief-forming process—can suffice for justification. This theory accommodates the practical realities of human cognition, recognizing that people do not always have access to or awareness of every factor contributing to their justified beliefs. Pritchard articulates the appealing pragmatism of externalism, though he acknowledges the criticisms it faces concerning epistemic deference and the potential neglect of the subjective point of view.</p>
+                    
+                    <div class="bg-orange-50 p-6 rounded-lg my-6">
+                        <h5 class="font-semibold text-orange-800 mb-3">Sources of Justification:</h5>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-orange-700">
+                            <div>
+                                <h6 class="font-medium">Direct Experience:</h6>
+                                <ul class="list-disc list-inside text-sm mt-1">
+                                    <li>Seeing, hearing, touching</li>
+                                    <li>Personal memories</li>
+                                    <li>Direct observation</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h6 class="font-medium">Reasoning:</h6>
+                                <ul class="list-disc list-inside text-sm mt-1">
+                                    <li>Logic and math</li>
+                                    <li>Drawing conclusions</li>
+                                    <li>Making inferences</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h6 class="font-medium">Testimony:</h6>
+                                <ul class="list-disc list-inside text-sm mt-1">
+                                    <li>What others tell us</li>
+                                    <li>Books and articles</li>
+                                    <li>Expert opinions</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h6 class="font-medium">Intuition:</h6>
+                                <ul class="list-disc list-inside text-sm mt-1">
+                                    <li>Gut feelings</li>
+                                    <li>Immediate insights</li>
+                                    <li>Common sense</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p>Philosophers debate about how these sources work together. Some think we have <strong>basic beliefs</strong> (like "I see a red apple") that don't need justification from other beliefs, and these support all our other beliefs.</p>
+                    
+                    <p>Others think our beliefs form a web where they all support each other - this is called <strong>coherentism</strong>. Your belief that it's sunny outside fits with your belief that shadows are sharp and your belief that people are wearing sunglasses.</p>
+                    
+                    <p>Most of what we know actually comes from <strong>testimony</strong> - other people telling us things. You probably believe dinosaurs existed not because you saw them, but because teachers, books, and museums told you so.</p>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-blue-50 p-6 rounded-lg">
+                <h4 class="text-lg font-semibold mb-4 text-blue-800"><i class="fas fa-search mr-2"></i>Investigation Activity</h4>
+                <p class="text-blue-700 mb-4">Pick one thing you believe and trace back your justification:</p>
+                <ul class="list-disc list-inside text-blue-700 space-y-1">
+                    <li>Did you experience it directly?</li>
+                    <li>Did someone tell you?</li>
+                    <li>Did you figure it out through reasoning?</li>
+                    <li>How far back can you trace your reasons?</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Lesson 4 Quiz -->
+        <section class="bg-blue-50 rounded-lg p-8 mb-8">
+            <h3 class="text-xl font-bold mb-6 text-blue-800"><i class="fas fa-question-circle mr-3"></i>Lesson 4 Quiz</h3>
+            <div class="space-y-6">
+                <!-- Question 4.1 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 4.1: Multiple Choice</h4>
+                    <p class="mb-4">Which theory of justification suggests that knowledge structures resemble a building with secure, self-evident beliefs as the foundation?</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_1" value="a" class="mr-3">
+                            <span>A) Coherentism</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_1" value="b" class="mr-3">
+                            <span>B) Infinitism</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_1" value="c" class="mr-3">
+                            <span>C) Foundationalism</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_1" value="d" class="mr-3">
+                            <span>D) Reliabilism</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 4.2 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 4.2: Multiple Choice</h4>
+                    <p class="mb-4">What is the main criticism faced by "Coherentism"?</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_2" value="a" class="mr-3">
+                            <span>A) It requires too many basic beliefs</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_2" value="b" class="mr-3">
+                            <span>B) It can be disconnected from reality (isolation problem)</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_2" value="c" class="mr-3">
+                            <span>C) It relies too much on direct experience</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_2" value="d" class="mr-3">
+                            <span>D) It is too simple to be useful.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 4.3 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 4.3: Multiple Choice</h4>
+                    <p class="mb-4">Which of the following is an example of "Testimony" as a source of justification?</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_3" value="a" class="mr-3">
+                            <span>A) Seeing a red apple</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_3" value="b" class="mr-3">
+                            <span>B) Solving a math problem</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_3" value="c" class="mr-3">
+                            <span>C) Reading a history textbook</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q4_3" value="d" class="mr-3">
+                            <span>D) Having a gut feeling.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 4.4 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 4.4: Short Answer</h4>
+                    <p class="mb-4">Briefly explain the difference between "Internalism" and "Externalism" in the context of justification.</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="Type your answer here..."></textarea>
+                </div>
+
+                <!-- Question 4.5 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 4.5: Short Answer</h4>
+                    <p class="mb-4">Describe a situation where you gained knowledge through "Direct Experience" and explain how that experience justified your belief.</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="Type your answer here..."></textarea>
+                </div>
+
+                <button onclick="checkLessonQuiz(4)" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    <i class="fas fa-check mr-2"></i>Check Lesson 4 Answers
+                </button>
+            </div>
+        </section>
+
+        <!-- Lesson 5: Skepticism and Trust -->
+        <section class="lesson-card bg-white rounded-lg shadow-lg p-8 mb-8" id="lesson5">
+            <div class="flex items-center mb-6">
+                <div class="bg-red-100 text-red-600 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4">5</div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Skepticism and Trust</h3>
+                    <p class="text-gray-600">Can We Really Know Anything?</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-red-600"><i class="fas fa-bullseye mr-2"></i>Learning Objectives</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i>Understand what skepticism means</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i>Learn about doubt and certainty</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i>Balance skepticism with practical life</li>
+                    </ul>
+                </div>
+                <div class="term-box text-white p-6 rounded-lg">
+                    <h4 class="text-lg font-semibold mb-4"><i class="fas fa-book mr-2"></i>Key Terms</h4>
+                    <div class="space-y-2">
+                        <div><strong>Skepticism</strong>: Doubting our knowledge</div>
+                        <div><strong>Certainty</strong>: Being completely sure</div>
+                        <div><strong>Pragmatism</strong>: Focus on what works</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h4 class="text-lg font-semibold mb-4 text-gray-800"><i class="fas fa-lightbulb mr-2"></i>Lesson Content</h4>
+                <div class="prose prose-lg text-gray-700">
+                    <p><strong>Skepticism</strong> is the idea that we should doubt or question our beliefs, especially claims about knowledge. Some philosophers take this so far that they wonder if we can really know anything at all!</p>
+                    
+                    <p>Philosophical skepticism poses significant questions about the certainty and extent of human knowledge. It challenges whether we can know anything at all, prompting deep discussions about the robustness of our knowledge claims. This section delves into the nature of skepticism, its classical formulations, and various responses that philosophers have developed to address these challenges.</p>
+
+                    <div class="bg-red-50 p-6 rounded-lg my-6">
+                        <h5 class="font-semibold text-red-800 mb-3">Famous Skeptical Questions:</h5>
+                        <ul class="list-disc list-inside space-y-2 text-red-700">
+                            <li><strong>The Dream Question:</strong> How do you know you're not dreaming right now?</li>
+                            <li><strong>The Matrix Question:</strong> How do you know your reality is real?</li>
+                            <li><strong>The Evil Deceiver:</strong> What if something is tricking you about everything?</li>
+                            <li><strong>The Brain in a Vat:</strong> What if you're just a brain being fed false experiences?</li>
+                        </ul>
+                    </div>
+                    
+                    <p>These questions might seem silly, but they point to something important: most of our beliefs depend on our senses and memory, but these can sometimes deceive us. If we can't trust them completely, how can we have certain knowledge?</p>
+                    
+                    <p>These skeptical scenarios highlight the vulnerability of our knowledge claims, pushing the discourse into examining if any belief can ever escape such doubt. If one cannot even be sure of the existence of their own hands or the external world, skepticism questions how any knowledge can be justified. This leads to the exploration of infallibilism—the idea that for a belief to constitute knowledge, it must be infallible, possessing absolute certainty. However, such infallibility is a high bar that most everyday knowledge claims fail to meet.</p>
+
+                    <p>However, extreme skepticism creates problems. If we doubt everything, we can't function in daily life. We need to trust some things - that bridges won't collapse, that food isn't poisoned, that our friends are real people.</p>
+
+                    <p>Philosophers have developed various responses to tackle skepticism. Contextualism, for instance, posits that the standards for knowledge vary depending on the context. According to contextualists, in everyday life, we operate under different epistemic standards than we do in philosophical contemplation. While the skeptic sets the bar extremely high, in practical situations, our lower standards are often sufficient for claiming knowledge. By shifting contexts, what counts as "knowledge" changes, thereby mitigating the skeptic’s strict requirements.</p>
+
+                    <p>Pragmatic approaches offer another set of responses. According to these, the practical consequences of our beliefs play a crucial role in justifying them. While skeptical scenarios like brain-in-a-vat might have significant theoretical implications, they lack practical impact on our everyday lives. As long as our beliefs work reliably within our lived experiences, they can be warranted as knowledge despite theoretical possibilities of error.</p>
+
+                    <p>Moreover, externalist theories such as reliabilism argue that the justification for a belief need not reside within the believer’s introspective access. Instead, if a belief is produced by a process that reliably leads to truth (like perception under normal conditions), it qualifies as justified knowledge. This externalist perspective shifts the focus from internal certainty to the reliability of the cognitive processes underpinning our beliefs.</p>
+
+                    <p>Finally, some responses to skepticism embrace a more deflationary approach, suggesting that while skepticism raises legitimate questions, it does not warrant significant concern in ordinary epistemic practices. These philosophers argue that knowledge, as it functions in practical contexts, remains largely unaffected by skeptical doubts, thereby allowing individuals to continue relying on their beliefs without undue skepticism.</p>
+                    
+                    <p>A balanced approach might be:</p>
+                    <ul>
+                        <li><strong>Healthy skepticism:</strong> Question suspicious claims and check sources</li>
+                        <li><strong>Practical trust:</strong> Accept well-supported beliefs that work in practice</li>
+                        <li><strong>Openness to change:</strong> Be willing to revise beliefs when presented with good evidence</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-gray-50 p-6 rounded-lg">
+                <h4 class="text-lg font-semibold mb-4 text-gray-800"><i class="fas fa-balance-scale mr-2"></i>Reflection Exercise</h4>
+                <p class="text-gray-700 mb-4">Consider these situations and decide how much skepticism is appropriate:</p>
+                <div class="space-y-2 text-gray-700">
+                    <p>1. A friend tells you a gossip story about someone at school</p>
+                    <p>2. Your science textbook explains how gravity works</p>
+                    <p>3. An advertisement claims a product will make you popular</p>
+                    <p>4. Your doctor tells you to take medicine when you're sick</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson 5 Quiz -->
+        <section class="bg-blue-50 rounded-lg p-8 mb-8">
+            <h3 class="text-xl font-bold mb-6 text-blue-800"><i class="fas fa-question-circle mr-3"></i>Lesson 5 Quiz</h3>
+            <div class="space-y-6">
+                <!-- Question 5.1 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 5.1: Multiple Choice</h4>
+                    <p class="mb-4">What is the primary concern of philosophical skepticism?</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_1" value="a" class="mr-3">
+                            <span>A) The origin of the universe</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_1" value="b" class="mr-3">
+                            <span>B) The certainty and extent of human knowledge</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_1" value="c" class="mr-3">
+                            <span>C) The nature of moral values</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_1" value="d" class="mr-3">
+                            <span>D) The structure of political systems</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 5.2 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 5.2: Multiple Choice</h4>
+                    <p class="mb-4">Which philosopher is often credited with bringing skepticism into the modern era with his methodical doubt?</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_2" value="a" class="mr-3">
+                            <span>A) Plato</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_2" value="b" class="mr-3">
+                            <span>B) René Descartes</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_2" value="c" class="mr-3">
+                            <span>C) David Hume</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_2" value="d" class="mr-3">
+                            <span>D) Immanuel Kant</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 5.3 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 5.3: Multiple Choice</h4>
+                    <p class="mb-4">What does "Contextualism" suggest about the standards for knowledge?</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_3" value="a" class="mr-3">
+                            <span>A) They are always absolute and unchanging.</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_3" value="b" class="mr-3">
+                            <span>B) They vary depending on the context.</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_3" value="c" class="mr-3">
+                            <span>C) They are determined by popular opinion.</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q5_3" value="d" class="mr-3">
+                            <span>D) They are irrelevant to knowledge claims.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 5.4 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 5.4: Short Answer</h4>
+                    <p class="mb-4">Explain the concept of "infallibilism" and why it is a high bar for everyday knowledge claims.</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="Type your answer here..."></textarea>
+                </div>
+
+                <!-- Question 5.5 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 5.5: Short Answer</h4>
+                    <p class="mb-4">Describe a "balanced approach" to skepticism mentioned in the lesson. Why is it important?</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="Type your answer here..."></textarea>
+                </div>
+
+                <button onclick="checkLessonQuiz(5)" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    <i class="fas fa-check mr-2"></i>Check Lesson 5 Answers
+                </button>
+            </div>
+        </section>
+
+        <!-- Lesson 6: Knowledge in the Digital Age -->
+        <section class="lesson-card bg-white rounded-lg shadow-lg p-8 mb-8" id="lesson6">
+            <div class="flex items-center mb-6">
+                <div class="bg-indigo-100 text-indigo-600 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4">6</div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Knowledge in the Digital Age</h3>
+                    <p class="text-gray-600">Modern Challenges to Knowledge</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-indigo-600"><i class="fas fa-bullseye mr-2"></i>Learning Objectives</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i>Identify digital age knowledge challenges</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i>Understand echo chambers and fake news</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i>Develop digital literacy skills</li>
+                    </ul>
+                </div>
+                <div class="term-box text-white p-6 rounded-lg">
+                    <h4 class="text-lg font-semibold mb-4"><i class="fas fa-book mr-2"></i>Key Terms</h4>
+                    <div class="space-y-2">
+                        <div><strong>Echo Chamber</strong>: Hearing only similar views</div>
+                        <div><strong>Fake News</strong>: False information</div>
+                        <div><strong>Digital Literacy</strong>: Smart internet use</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h4 class="text-lg font-semibold mb-4 text-gray-800"><i class="fas fa-lightbulb mr-2"></i>Lesson Content</h4>
+                <div class="prose prose-lg text-gray-700">
+                    <p>The internet has completely changed how we get information and form beliefs. While this gives us access to incredible amounts of knowledge, it also creates new challenges for knowing what's true.</p>
+                    
+                    <p>Part 6 of Duncan Pritchard's "What Is This Thing Called Knowledge?" shifts the focus from individual epistemic inquiries to the communal aspects of knowledge acquisition. <strong>Social Epistemology</strong> investigates the role of social factors, communal practices, and societal structures in shaping what we know and how we come to know it.</p>
+
+                    <p>One of the fundamental issues addressed in social epistemology is the concept of <strong>testimony</strong>. Testimony refers to the acquisition of knowledge through the reports of others. Most of what individuals know comes from the testimony of other people, ranging from teachers and parents to experts and the media. Pritchard discusses the significance of trust in this regard, emphasizing that much of our epistemic endeavors depend on being able to trust the information received from others. Trust plays a crucial role in determining whether we accept testimony as a reliable source of knowledge.</p>
+
+                    <p>Another critical aspect of social epistemology is the <strong>division of epistemic labor</strong>. In contemporary societies, knowledge is often distributed among various individuals and institutions. This division of labor allows for more efficient and effective knowledge acquisition, as it leverages the expertise of specialists in different fields. For instance, we rely on scientists for knowledge about the natural world, doctors for medical information, and historians for understanding the past. Pritchard explores how this division not only facilitates the advancement of knowledge but also brings forward concerns about misinformation and the potential for epistemic errors when the division of labor is not properly managed.</p>
+
+                    <p>Pritchard also delves into the influence of societal structures and institutions on the validation and dissemination of knowledge. Universities, research institutions, and media outlets are instrumental in creating and spreading knowledge. These institutions provide frameworks for rigorous scrutiny and peer review, which help ensure that knowledge claims are credible and reliable. However, Pritchard notes that these same structures can sometimes hinder the dissemination of knowledge due to institutional biases, political influence, or commercial interests.</p>
+
+                    <p>In the contemporary landscape, the study of knowledge, or epistemology, faces several modern challenges that test its traditional boundaries and applications. One of the most significant issues confronting epistemology today is the sheer volume and accessibility of digital information. The proliferation of the internet and social media platforms has radically transformed the way information is disseminated, consumed, and evaluated. This digital age, while democratizing information access, has also led to unprecedented challenges such as the spread of misinformation and "fake news."</p>
+                    
+                    <div class="bg-indigo-50 p-6 rounded-lg my-6">
+                        <h5 class="font-semibold text-indigo-800 mb-3">Digital Age Challenges:</h5>
+                        <div class="space-y-3 text-indigo-700">
+                            <div>
+                                <h6 class="font-medium">Information Overload:</h6>
+                                <p class="text-sm">Too much information to process and verify</p>
+                            </div>
+                            <div>
+                                <h6 class="font-medium">Echo Chambers:</h6>
+                                <p class="text-sm">Algorithms show us information that confirms what we already believe</p>
+                            </div>
+                            <div>
+                                <h6 class="font-medium">Fake News:</h6>
+                                <p class="text-sm">False information that looks real and spreads quickly</p>
+                            </div>
+                            <div>
+                                <h6 class="font-medium">Deepfakes and Manipulation:</h6>
+                                <p class="text-sm">Technology can create convincing fake videos and images</p>
+                            </div>
+                            <div>
+                                <h6 class="font-medium">Cognitive Biases:</h6>
+                                <p class="text-sm">Such as confirmation bias (favoring information that confirms existing beliefs) and availability heuristic (judging probability based on readily available information), which contribute to the spread of fake news.</p>
+                            </div>
+                            <div>
+                                <h6 class="font-medium">Artificial Intelligence (AI) and Machine Learning:</h6>
+                                <p class="text-sm">These technologies transform knowledge production and validation, raising questions about the authenticity of AI-generated knowledge and the epistemic reliability of automated systems.</p>
+                            </div>
+                            <div>
+                                <h6 class="font-medium">Global Interconnectedness and Cultural Diversity:</h6>
+                                <p class="text-sm">Recognition of multiple ways of knowing, challenging the universality of traditional epistemological theories.</p>
+                            </div>
+                            <div>
+                                <h6 class="font-medium">Contemporary Science:</h6>
+                                <p class="text-sm">Fields like quantum mechanics and climate science involve complex, abstract, and sometimes counter-intuitive concepts that challenge conventional understandings of evidence, belief, and truth.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p>These challenges make it harder to distinguish between reliable and unreliable sources. Just because something appears on the internet doesn't make it true, even if it looks professional or has lots of shares.</p>
+                    
+                    <div class="bg-green-50 p-6 rounded-lg my-6">
+                        <h5 class="font-semibold text-green-800 mb-3">Digital Wisdom Strategies:</h5>
+                        <ul class="list-disc list-inside space-y-2 text-green-700">
+                            <li><strong>Check sources:</strong> Who wrote this? What are their qualifications?</li>
+                            <li><strong>Cross-reference:</strong> Do other reliable sources say the same thing?</li>
+                            <li><strong>Look for bias:</strong> Is this trying to persuade you of something?</li>
+                            <li><strong>Check dates:</strong> Is this information current?</li>
+                            <li><strong>Be aware of emotions:</strong> Is this making you angry or scared? That might be intentional</li>
+                            <li><strong>Diversify sources:</strong> Don't get all your news from one place</li>
+                            <li><strong>Cultivate Epistemic Virtues:</strong> Develop traits like open-mindedness, intellectual humility, and critical thinking.</li>
+                            <li><strong>Epistemic Responsibility and Vigilance:</strong> Seek truth, avoid falsehood, and critically assess the credibility and reliability of information sources.</li>
+                        </ul>
+                    </div>
+                    
+                    <p>The good news is that understanding epistemology helps us navigate these challenges. The same principles that philosophers have developed - checking justification, being appropriately skeptical, and understanding the limits of knowledge - are more important than ever in the digital age.</p>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-yellow-50 p-6 rounded-lg">
+                <h4 class="text-lg font-semibold mb-4 text-yellow-800"><i class="fas fa-shield-alt mr-2"></i>Digital Detective Challenge</h4>
+                <p class="text-yellow-700 mb-4">Practice your digital literacy skills:</p>
+                <ol class="list-decimal list-inside text-yellow-700 space-y-1">
+                    <li>Find a news article online about a topic you care about</li>
+                    <li>Check: Who wrote it? When? What sources do they cite?</li>
+                    <li>Look for the same story on 2-3 other news sites</li>
+                    <li>Notice: Are there differences in how they present the facts?</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Lesson 6 Quiz -->
+        <section class="bg-blue-50 rounded-lg p-8 mb-8">
+            <h3 class="text-xl font-bold mb-6 text-blue-800"><i class="fas fa-question-circle mr-3"></i>Lesson 6 Quiz</h3>
+            <div class="space-y-6">
+                <!-- Question 6.1 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 6.1: Multiple Choice</h4>
+                    <p class="mb-4">Which of the following is a challenge to knowledge in the digital age?</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_1" value="a" class="mr-3">
+                            <span>A) Increased exposure to diverse information</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_1" value="b" class="mr-3">
+                            <span>B) Spread of misinformation and "fake news"</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_1" value="c" class="mr-3">
+                            <span>C) Easier communication with experts</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_1" value="d" class="mr-3">
+                            <span>D) Faster scientific discoveries.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 6.2 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 6.2: Multiple Choice</h4>
+                    <p class="mb-4">In the context of digital information, what is an "echo chamber"?</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_2" value="a" class="mr-3">
+                            <span>A) A room designed for perfect acoustics</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_2" value="b" class="mr-3">
+                            <span>B) A situation where individuals are exposed only to information that confirms their existing beliefs</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_2" value="c" class="mr-3">
+                            <span>C) A recording technique</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_2" value="d" class="mr-3">
+                            <span>D) A method for improving memory.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 6.3 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 6.3: Multiple Choice</h4>
+                    <p class="mb-4">Which epistemic virtue is crucial for navigating information-rich environments and combating misinformation?</p>
+                    <div class="space-y-2">
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_3" value="a" class="mr-3">
+                            <span>A) Laziness</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_3" value="b" class="mr-3">
+                            <span>B) Closed-mindedness</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_3" value="c" class="mr-3">
+                            <span>C) Critical thinking</span>
+                        </label>
+                        <label class="quiz-option flex items-center p-3 rounded cursor-pointer hover:bg-gray-100">
+                            <input type="radio" name="q6_3" value="d" class="mr-3">
+                            <span>D) Dogmatism.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 6.4 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 6.4: Short Answer</h4>
+                    <p class="mb-4">Explain how the "division of epistemic labor" both facilitates and challenges knowledge acquisition in modern society.</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="Type your answer here..."></textarea>
+                </div>
+
+                <!-- Question 6.5 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h4 class="text-lg font-semibold mb-4">Question 6.5: Short Answer</h4>
+                    <p class="mb-4">Describe two "digital wisdom strategies" you can use to evaluate the reliability of online information.</p>
+                    <textarea class="w-full p-3 rounded bg-gray-100 text-gray-700 placeholder-gray-400 border border-gray-300" rows="4" placeholder="Type your answer here..."></textarea>
+                </div>
+
+                <button onclick="checkLessonQuiz(6)" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    <i class="fas fa-check mr-2"></i>Check Lesson 6 Answers
+                </button>
+            </div>
+        </section>
+
+        <!-- Course Summary -->
+        <section class="bg-white rounded-lg shadow-lg p-8 mb-8">
+            <h3 class="text-2xl font-bold mb-6"><i class="fas fa-graduation-cap mr-3"></i>Course Summary</h3>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-blue-600">What We've Learned</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Epistemology basics:</strong> The study of knowledge and how we know things
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>JTB Theory:</strong> Knowledge as justified true belief, and its limitations
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Gettier problems:</strong> Why lucky true beliefs don't count as knowledge
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Sources of justification:</strong> Experience, reasoning, testimony, and intuition
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Healthy skepticism:</strong> Balancing doubt with practical trust
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Digital literacy:</strong> Navigating knowledge in the internet age
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-purple-600">Why This Matters</h4>
+                    <div class="space-y-4 text-gray-700">
+                        <p>Understanding epistemology helps you become a better thinker and learner. You now have tools to:</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Evaluate the reliability of information sources</li>
+                            <li>Recognize when you have good reasons for your beliefs</li>
+                            <li>Ask better questions about what you read and hear</li>
+                            <li>Avoid being fooled by fake news or bad arguments</li>
+                            <li>Understand when to trust experts and when to be skeptical</li>
+                            <li>Think more clearly about controversial topics</li>
+                        </ul>
+                        <p class="mt-4 font-medium text-purple-600">These skills will serve you well in school, work, and life!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Next Steps -->
+        <section class="bg-gradient-to-r from-green-500 to-blue-500 text-white rounded-lg p-8">
+            <h3 class="text-2xl font-bold mb-6"><i class="fas fa-rocket mr-3"></i>Continue Your Learning Journey</h3>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white bg-opacity-20 rounded-lg p-6">
+                    <h4 class="text-lg font-semibold mb-3"><i class="fas fa-book-open mr-2"></i>Further Reading</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>• Duncan Pritchard's "What Is This Thing Called Knowledge?" (full book)</li>
+                        <li>• Stanford Encyclopedia of Philosophy (online)</li>
+                        <li>• "Sophie's World" by Jostein Gaarder</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white bg-opacity-20 rounded-lg p-6">
+                    <h4 class="text-lg font-semibold mb-3"><i class="fas fa-users mr-2"></i>Discussion Topics</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>• Is absolute truth possible?</li>
+                        <li>• Should we trust artificial intelligence?</li>
+                        <li>• • How do we know if science is reliable?</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white bg-opacity-20 rounded-lg p-6">
+                    <h4 class="text-lg font-semibold mb-3"><i class="fas fa-lightbulb mr-2"></i>Apply What You Know</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>• Analyze news articles for bias</li>
+                        <li>• Question your own beliefs</li>
+                        <li>• Practice fact-checking skills</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="mb-4">Thank you for exploring the fascinating world of epistemology!</p>
+            <p class="text-gray-400">This course is based on Duncan Pritchard's "What Is This Thing Called Knowledge?" adapted for middle school students.</p>
+            <div class="mt-6">
+                <a href="index_zh.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors mr-4">
+                    <i class="fas fa-language mr-2"></i>Switch to Chinese
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
