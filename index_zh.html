@@ -91,19 +91,7 @@
             </div>
         </section>
 
-        <!-- Progress Section -->
-        <section class="bg-white py-8">
-            <div class="max-w-4xl mx-auto px-4">
-                <h2 class="text-2xl font-bold text-center mb-6">學習進度</h2>
-                <div class="bg-gray-200 rounded-full h-4 mb-4">
-                    <div class="bg-blue-600 h-4 rounded-full transition-all duration-500" style="width: 0%" id="progress-bar"></div>
-                </div>
-                <div class="text-center">
-                    <span id="progress-text">0%</span>
-                    <button onclick="resetProgress()" class="ml-4 text-blue-600 hover:text-blue-800">重設</button>
-                </div>
-            </div>
-        </section>
+
 
         <!-- Lesson 1 -->
         <section id="lesson1" class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-8">
@@ -447,29 +435,20 @@
     <script>
         // Auto-hide navigation functionality
         let lastScrollTop = 0;
-        let scrollTimeout;
 
         function handleScroll() {
             const navbar = document.getElementById('navbar');
             const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
             
             if (currentScroll > lastScrollTop && currentScroll > 100) {
-                // Scrolling down & past 100px
+                // Scrolling down & past 100px - hide navbar
                 navbar.style.transform = 'translateY(-100%)';
-            } else {
-                // Scrolling up
+            } else if (currentScroll < lastScrollTop) {
+                // Scrolling up - show navbar
                 navbar.style.transform = 'translateY(0)';
             }
             
             lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-            
-            // Clear existing timeout
-            clearTimeout(scrollTimeout);
-            
-            // Show navbar after scrolling stops
-            scrollTimeout = setTimeout(() => {
-                navbar.style.transform = 'translateY(0)';
-            }, 1000);
         }
 
         // Mobile menu functions
@@ -509,39 +488,12 @@
             }
         }
 
-        // Progress tracking
-        function updateProgress() {
-            // Simple progress calculation based on scroll position
-            const sections = document.querySelectorAll('section[id^="lesson"]');
-            let completed = 0;
-            
-            sections.forEach(section => {
-                const rect = section.getBoundingClientRect();
-                if (rect.top < window.innerHeight / 2) {
-                    completed++;
-                }
-            });
-            
-            const progress = Math.min((completed / sections.length) * 100, 100);
-            document.getElementById('progress-bar').style.width = progress + '%';
-            document.getElementById('progress-text').textContent = Math.round(progress) + '%';
-        }
 
-        function resetProgress() {
-            document.getElementById('progress-bar').style.width = '0%';
-            document.getElementById('progress-text').textContent = '0%';
-        }
 
         // Initialize everything when page loads
         document.addEventListener('DOMContentLoaded', function() {
-            // Add scroll listener for auto-hide navigation and progress
-            window.addEventListener('scroll', function() {
-                handleScroll();
-                updateProgress();
-            }, { passive: true });
-            
-            // Initial progress update
-            updateProgress();
+            // Add scroll listener for auto-hide navigation
+            window.addEventListener('scroll', handleScroll, { passive: true });
         });
     </script>
 </body>
