@@ -171,7 +171,7 @@ function detectLanguage() {
         banner.className = 'bg-blue-600 text-white text-center py-2 px-4';
         banner.innerHTML = `
             <span>中文用戶？</span>
-            <a href="https://hcekgkti.gensparkspace.com/" class="underline ml-2">切換到中文版</a>
+            <a href="https://e07-knowledge.vercel.app/index_zh.html" class="underline ml-2">切換到中文版</a>
             <button onclick="this.parentElement.remove()" class="ml-4 text-white hover:text-gray-200">✕</button>
         `;
         document.body.insertBefore(banner, document.body.firstChild);
