@@ -49,14 +49,14 @@
         <!-- Mobile navigation menu -->
         <div class="md:hidden hidden mt-4 pb-4" id="mobile-menu">
             <div class="flex flex-col space-y-2">
-                <a href="#lesson1" class="hover:text-blue-300 py-2" onclick="closeMobileMenu()">Lesson 1</a>
-                <a href="#lesson2" class="hover:text-blue-300 py-2" onclick="closeMobileMenu()">Lesson 2</a>
-                <a href="#lesson3" class="hover:text-blue-300 py-2" onclick="closeMobileMenu()">Lesson 3</a>
-                <a href="#lesson4" class="hover:text-blue-300 py-2" onclick="closeMobileMenu()">Lesson 4</a>
-                <a href="#lesson5" class="hover:text-blue-300 py-2" onclick="closeMobileMenu()">Lesson 5</a>
-                <a href="#lesson6" class="hover:text-blue-300 py-2" onclick="closeMobileMenu()">Lesson 6</a>
-                <a href="#about" class="hover:text-blue-300 py-2" onclick="closeMobileMenu()">About</a>
-                <a href="index_zh.html" class="hover:text-blue-300 py-2" onclick="closeMobileMenu()">中文版</a>
+                <a href="#lesson1" class="hover:text-blue-300 py-2 mobile-nav-link">Lesson 1</a>
+                <a href="#lesson2" class="hover:text-blue-300 py-2 mobile-nav-link">Lesson 2</a>
+                <a href="#lesson3" class="hover:text-blue-300 py-2 mobile-nav-link">Lesson 3</a>
+                <a href="#lesson4" class="hover:text-blue-300 py-2 mobile-nav-link">Lesson 4</a>
+                <a href="#lesson5" class="hover:text-blue-300 py-2 mobile-nav-link">Lesson 5</a>
+                <a href="#lesson6" class="hover:text-blue-300 py-2 mobile-nav-link">Lesson 6</a>
+                <a href="#about" class="hover:text-blue-300 py-2 mobile-nav-link">About</a>
+                <a href="index_zh.html" class="hover:text-blue-300 py-2 mobile-nav-link">中文版</a>
             </div>
         </div>
     </nav>
@@ -469,9 +469,31 @@
             const mobileMenu = document.getElementById('mobile-menu');
             const menuBtn = document.getElementById('mobile-menu-btn');
             
-            mobileMenu.classList.add('hidden');
-            menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            // Add a small delay to allow the click to register
+            setTimeout(() => {
+                mobileMenu.classList.add('hidden');
+                menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            }, 100);
         }
+
+        // Add event listeners for mobile navigation links
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+            
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // For anchor links, add a delay before closing
+                    if (this.getAttribute('href').startsWith('#')) {
+                        setTimeout(() => {
+                            closeMobileMenu();
+                        }, 300);
+                    } else {
+                        // For external links, close immediately
+                        closeMobileMenu();
+                    }
+                });
+            });
+        });
 
         // Quiz functionality
         function checkAnswer(questionName, correctAnswer) {
